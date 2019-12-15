@@ -1,0 +1,24 @@
+
+$default-font: "ProximaNova";
+$secondary-font: "GothamPro";
+$extra-font: "BebasNeue";
+
+$addr: '../fonts/';
+$file-format: woff2;
+
+@include font-face ($default-font, $addr + "ProximaNova-Regular", $file-formats: $file-format);
+@include font-face ($default-font, $addr + "ProximaNova-Bold", bold, $file-formats: $file-format);
+@include font-face ($secondary-font, $addr + "GothamPro", $file-formats: $file-format);
+@include font-face ($secondary-font, $addr + "GothamPro-Bold", bold, $file-formats: $file-format);
+@include font-face ($extra-font, $addr + "BebasNeueBold", bold, $file-formats: $file-format);
+
+// font-weight helper:
+
+// 100 Extra Light or Ultra Light;
+// 200 Light or Thin; 300 Book or Demi;
+// 400 Regular or Normal;
+// 500 Medium;
+// 600 Semibold or Demibold;
+// 700 Bold;
+// 800 Black or Extra Bold or Heavy;
+// 900 Extra Black or Fat or Ultra Black

@@ -1,0 +1,25 @@
+mixin top-line()
+	// start .top-line
+	+b.top-line.block-with-lazy
+		.container
+			+e.main-row.row
+				.col-auto
+					+e.A.title-block(href='/')
+						+e.logo-wrap
+							img.res-i(src='img/@2x/logo.png' alt='')
+						+e.text-wrap
+							+e.title
+								span М
+								|ир детства
+							+e.subtitle одежда и обувь для<br>детей и подростков
+				.col-auto
+					+e.contact-row.row
+						.col-auto.d-none.d-lg-block
+							+e.A.phone-block(href='tel:+380503014468')
+								+icon('phone')
+								+e.number-wrap
+									+e.number +38 (050) 301-44-68
+									+e.number-text Обратный звонок
+						.col-auto
+							+soc()
+	// end .top-line

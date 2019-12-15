@@ -1,0 +1,51 @@
+ 
+	  
+.soc{
+	margin: 0 rem(-5px);
+	display: flex;
+	&__item{
+		text-decoration: none !important;
+		margin: 0 rem(4px);
+		vertical-align: middle;
+		@include mt;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: rem(35);
+		height: rem(35);
+		border-radius: 50%;
+		border: 2px solid #ffffff;
+		&:hover{
+		 	// box-shadow: 0 0 33px 0px rgba(255, 83, 0, 0.16);
+			opacity: .6 ;
+		}
+		
+	}
+	.icon{
+		color: #fff;
+		&-phone{
+			font-size: rem(18);
+		}
+		&-insta{
+			font-size: rem(16);
+		}
+		&-vk{
+			font-size: rem(18);
+		}
+	}
+	 
+
+}
+ 
+
+.counter{
+	counter-reset: num;
+	&__item {
+		position: relative; 
+		&::before {
+			content: counter(num);
+			counter-increment: num;
+		}
+	}
+}
+

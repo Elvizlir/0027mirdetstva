@@ -1,0 +1,263 @@
+.top-nav {
+	
+	@include media-breakpoint-down(md){
+		padding: rem(5) 0;
+	}
+	background-color: #1c15a9;
+	color: #ffffff;
+	// position: absolute;
+	top: 100%;
+	// @include clearfix;ss
+	z-index: 20;
+	@include mt;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+	&.fixed {
+		position: fixed;
+		width: 100vw;
+		bottom: auto;
+		margin-top: 0;
+		.top-nav{
+			&__phone-col{
+				@include media-breakpoint-up(lg){
+					display: block !important;
+				}
+			}
+		}
+	}
+
+	&__nav {
+		background-color: #fff;
+		position: absolute;
+		top: 100%;
+		width: rem(258);
+		right: 0;
+		margin-bottom: 0;
+		text-align: center;
+		list-style-type: none;
+	}
+	
+	&__item {
+		line-height: 1;
+		text-align: left;
+		display: block;
+		list-style-type: none;
+		&:not(:first-child){
+			margin-top: -1px;
+		}
+		& > a{
+			display: block;
+			border: 1px solid #adadad;
+			padding: rem(16);
+			font-size: rem(14);
+			font-weight: bold;
+			color: #191919;
+		}
+	}
+
+	&__row{
+		@include media-breakpoint-down(xs){
+			@include roww(5);
+		}
+		@include media-breakpoint-down(md){
+			@include roww(10);
+		}
+		align-items: center;
+	}
+
+	&__home{
+		@include media-breakpoint-up(lg){
+			margin-left: rem(15);
+		}
+		display: inline-block;
+		.icon{
+			@include media-breakpoint-down(md){
+				display: none;
+			}
+			color: #fff;
+			font-size: rem(22);
+		}
+	}
+
+	&__mob-logo{
+		max-width: rem(35);
+		@include media-breakpoint-up(lg){
+			display: none;
+		}
+	}
+
+	&__mnu-wrap{
+		position: relative;
+	}
+
+	&__catalog{
+		display: block;
+		color: #fff;
+		line-height: 1;
+		font-size: rem(16);
+		background-color: #ff8b2d;
+		padding: rem(15) rem(50);
+		text-transform: uppercase;
+		&:hover{
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+
+	&__form-col{
+		@include media-breakpoint-down(xs){
+			display: none;
+		}
+		@include media-breakpoint-up(sm){
+			display: block !important;
+		}
+	}
+
+	.form-wrap{
+		@include media-breakpoint-up(xl){
+			margin-left: rem(30);
+		}
+		form{
+			display: flex;
+			align-items: center;
+		}
+		&__input-wrap{
+			margin: 0;
+			flex-grow: 1;
+		}
+		&__input{
+			border: none;
+			background-color: transparent;
+			color: #fff;
+			box-shadow: none;
+			font-size: rem(14);
+			&::placeholder{
+				color: #fff;
+			}
+		}
+		&__btn{
+			padding: 0;
+			box-shadow: none;
+			.icon{
+				font-size: rem(18);
+				color: #fff;
+			}
+		}
+		&__input-close{
+			.icon{
+				font-size: rem(20);
+			}
+		}
+	}
+
+
+
+	&__icon-item{
+		color: #fff;
+		margin: 0 rem(5);
+		&:hover{
+			color: #fff;
+			text-decoration: none;
+			opacity: .7;
+		}
+		.icon{
+			font-size: rem(23);
+			@include media-breakpoint-up(sm){
+				font-size: rem(28);
+			}
+		}
+	}
+
+	&__phone-col{
+		@include media-breakpoint-up(lg){
+			display: none;
+		}
+	}
+
+	&__phone-block{
+		color: #ffffff;
+		margin-left: rem(12);
+		display: flex;
+		align-items: center;
+		text-align: center;
+		&:hover{
+			text-decoration: none;
+			color: #ffffff;
+			opacity: .7;
+		}
+		.icon{
+			@include media-breakpoint-up(lg){
+				margin-right: rem(12);
+			}
+			font-size: rem(22);
+			@include media-breakpoint-up(sm){
+				font-size: rem(25);
+			}
+		}
+	}
+
+	&__number-block{
+		@include media-breakpoint-down(md){
+			display: none;
+		}
+	}
+
+	&__search-btn{
+		.icon{
+			font-size: rem(20);
+		}
+	}
+
+	&__number{
+		display: block;
+		font-size: rem(14);
+		line-height: 1;
+		margin-bottom: rem(4);
+	}
+
+	&__number-text{
+		display: block;
+		color: #d1d1d1;
+		font-size: rem(14);
+		line-height: 1;
+	}
+
+
+	// 
+	@include media-breakpoint-up(xl) {}
+
+	@include media-breakpoint-up(lg) {}
+
+	@include media-breakpoint-up(md) {}
+
+	@include media-breakpoint-up(sm) {}
+
+	@include media-breakpoint-up(xs) {}
+
+	// 
+	@include media-breakpoint-between(md, xl) {}
+
+	// 
+	@include media-breakpoint-only(xs) {}
+
+	@include media-breakpoint-only(sm) {}
+
+	@include media-breakpoint-only(md) {}
+
+	@include media-breakpoint-only(lg) {}
+
+	@include media-breakpoint-only(xl) {}
+
+	// 
+	@include media-breakpoint-down(xl) {}
+
+	@include media-breakpoint-down(lg) {}
+
+	@include media-breakpoint-down(md) {}
+
+	@include media-breakpoint-down(sm) {}
+
+	@include media-breakpoint-down(xs) {}
+}

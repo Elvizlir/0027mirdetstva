@@ -1,0 +1,52 @@
+
+mixin mob-mnu()
+	+b.menu-mobile--js.d-lg-none
+		+b.toggle-menu-mobile--js
+			span
+		+e.inner
+		
+			+mnu()
+			+soc()
+			.text-right
+	//  мобильное меню
+mixin top-nav() 
+	// start top-nav
+	+b.top-nav.block-with-lazy
+		.container
+			+e.row.row
+				.col-auto.d-lg-none
+					+b.toggle-menu-mobile--js.d-lg-none
+						span
+				.col-sm-auto.col
+					+e.A.home(href='#')
+						+e.IMG.mob-logo.res-i(src='img/@2x/logo.png' alt='')
+						+icon('home')
+				.col-auto.d-sm-none
+					+e.search-btn--js
+						+icon('search')
+				.col-auto.d-none.d-lg-block
+					+e.mnu-wrap
+						+e.A.catalog(href='#') категории
+						+mnu()
+				+e.form-col.col-sm.order-sm-0.order-last
+					+form-wrap
+						+e.btn.btn(type="submit")
+							+icon('search')
+						+input('Поиск товара по каталогу')(autocomplete='off')
+						+e.input-close--js.d-sm-none
+							+icon('close')
+				.col-auto
+					+e.A.icon-item(href='#')
+						+icon('heart')
+					+e.A.icon-item(href='#')
+						+icon('basket')
+					+e.A.icon-item(href='#')
+						+icon('user')
+				+e.phone-col.col-auto
+					+e.A.phone-block(href='tel:+380503014468')
+						+icon('phone')
+						+e.number-block
+							+e.number +38 (050) 301-44-68
+							+e.number-text Обратный звонок
+					
+	// end top-nav
