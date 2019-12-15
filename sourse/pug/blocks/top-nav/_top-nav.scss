@@ -153,6 +153,10 @@
 
 	&__mnu-wrap{
 		position: relative;
+		&:hover > .top-nav__nav{
+			opacity: 1 !important;
+			pointer-events: unset !important;
+		}
 	}
 
 	&__catalog{

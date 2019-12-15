@@ -452,7 +452,13 @@ a{
 
 .main-page{
 	.top-nav__nav{
-		opacity: 1 !important;
-		pointer-events: unset !important;
+		opacity: 1;
+		pointer-events: unset;
+	}
+	.top-nav.fixed{
+		.top-nav__nav{
+			opacity: 0;
+			pointer-events: none;
+		}
 	}
 }
