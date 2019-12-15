@@ -148,6 +148,38 @@ $h: em(2);
 	}
 
 	&__submenu{
+		padding-left: rem(20);
+		font-size: rem(14);
 		display: none;
+	}
+
+	&__item{
+		&.menu-item-has-children{
+			position: relative;
+			&::after{
+				content: url(../img/svg/menu-arrow.svg);
+				position: absolute;
+				top: rem(12);
+				right: rem(20);
+				@include mt;
+				transform-origin: center;
+			}
+			&.item-active{
+				&::after{
+					transform: rotate(90deg);
+				}
+			}
+		}
+	}
+
+	&__sub-col{
+		&:not(:last-child){
+			a{
+				border-bottom: 1px solid rgba(255, 255, 255, .13);
+			}
+		}
+		a{
+			padding-left: 0 !important;
+		}
 	}
 }

@@ -449,3 +449,10 @@ a{
 }
 
 // .pagination-wrapper li
+
+.main-page{
+	.top-nav__nav{
+		opacity: 1 !important;
+		pointer-events: unset !important;
+	}
+}

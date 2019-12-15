@@ -128,22 +128,46 @@ mixin mnu()
 //- menu
 mixin mnu()
 	+e.UL.nav(itemscope itemtype="http://schema.org/SiteNavigationElement")
-		+e.LI.item(itemprop="item")
+		+e.LI.item.menu-item-has-children(itemprop="item")
 			+e.A.link(href='#' itemprop="url") Одежда для девочек
-		+e.LI.item(itemprop="item")
+			mixin submenu()
+				+e.submenu
+					.row
+						mixin submenu-i()
+							+e.sub-col.col-lg-4
+								+e.sub-item
+									a(href='#') Ссылка подменю Ссылка подменю Ссылка подменю
+						+submenu-i()
+						+submenu-i()
+						+submenu-i()
+						+submenu-i()
+						+submenu-i()
+						+submenu-i()
+						+submenu-i()
+						+submenu-i()
+						+submenu-i()
+			+submenu()
+		+e.LI.item.menu-item-has-children(itemprop="item")
 			+e.A.link(href='#' itemprop="url") Одежда
-		+e.LI.item(itemprop="item")
+			+submenu()
+		+e.LI.item.menu-item-has-children(itemprop="item")
 			+e.A.link(href='#' itemprop="url") Детский транспорт
-		+e.LI.item(itemprop="item")
+			+submenu()
+		+e.LI.item.menu-item-has-children(itemprop="item")
 			+e.A.link(href='#' itemprop="url") Новорожденным
-		+e.LI.item(itemprop="item")
+			+submenu()
+		+e.LI.item.menu-item-has-children(itemprop="item")
 			+e.A.link(href='#' itemprop="url") Ортопедические товары
-		+e.LI.item(itemprop="item")
+			+submenu()
+		+e.LI.item.menu-item-has-children(itemprop="item")
 			+e.A.link(href='#' itemprop="url") Рюкзаки, ранцы, сумки
-		+e.LI.item(itemprop="item")
+			+submenu()
+		+e.LI.item.menu-item-has-children(itemprop="item")
 			+e.A.link(href='#' itemprop="url") Акции
-		+e.LI.item(itemprop="item")
+			+submenu()
+		+e.LI.item.menu-item-has-children(itemprop="item")
 			+e.A.link(href='#' itemprop="url") Школьная форма
+			+submenu()
 		+e.LI.item(itemprop="item")
 			+e.A.link(href='#' itemprop="url") Показать все категории
 //- /menu
