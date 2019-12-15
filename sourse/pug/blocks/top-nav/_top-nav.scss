@@ -26,8 +26,11 @@
 				}
 			}
 		}
+		.top-nav__nav{
+			opacity: 0;
+			pointer-events: none;
+		}
 	}
-
 	&__nav {
 		opacity: 0;
 		pointer-events: none;
