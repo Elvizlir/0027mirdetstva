@@ -1,0 +1,27 @@
+mixin s-main-slider()
+	// start s-main-slider
+	+b.SECTION.s-main-slider.section#s-main-slider&attributes(attributes)
+		.container
+			.row
+				.col-lg-9.offset-lg-3
+					+e.slider-wrap
+						+e.slider-btn--left.btn
+							+icon('left-arrow')
+						+e.slider-btn--right.btn
+							+icon('right-arrow')
+						+e.slider--js
+							mixin main-slide()
+								.slick-slide
+									+e.block
+										+e.img-wrap
+											img(src='img/@2x/main-slider1.jpg' alt='')
+										+e.slide-main-block
+											+e.slide-title Платья&nbsp;для девочек
+											+e.A.slide-btn.btn(href='#') Смотреть
+										+e.img-wrap
+											img(src='img/@2x/main-slider2.jpg' alt='')
+							+main-slide()
+							+main-slide()
+						+e.slider-dots
+			
+	// end s-main-slider

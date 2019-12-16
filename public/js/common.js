@@ -138,10 +138,10 @@ function eventHandler() {
 		var topN = $(".top-nav").innerHeight();
 		$(window).scroll(function () {
 			if ($(window).scrollTop() > topL) {
-				$('.header-block').css('margin-top', topN);
+				$('.top-section').css('margin-top', topN);
 				$('.top-nav  ').addClass('fixed');
 			} else {
-				$('.header-block').css('margin-top', '0');
+				$('.top-section').css('margin-top', '0');
 				$('.top-nav  ').removeClass('fixed');
 			}
 		}); // конец добавил
@@ -190,25 +190,13 @@ function eventHandler() {
 		autoplaySpeed: 6000,
 		lazyLoad: 'progressive'
 	};
-	$('.s-gal__slider--js').slick(_objectSpread({}, defaultSlide, {
+	$('.s-main-slider__slider--js').slick(_objectSpread({}, defaultSlide, {
 		slidesToShow: 1,
-		responsive: [{
-			breakpoint: 1200,
-			settings: {
-				slidesToShow: 4
-			}
-		}, {
-			breakpoint: 992,
-			settings: {
-				slidesToShow: 3
-			}
-		}, {
-			breakpoint: 576,
-			settings: {
-				slidesToShow: 2,
-				arrows: true
-			}
-		}]
+		slidesToScroll: 1,
+		dots: true,
+		appendDots: $('.s-main-slider__slider-dots'),
+		prevArrow: $('.s-main-slider__slider-btn--left'),
+		nextArrow: $('.s-main-slider__slider-btn--right')
 	})); // $('.s-gal__slider\
 	// ,.slider-for2 ')
 	// 	.on('lazyLoaded', function (event, slick, image, imageSource) {

@@ -8,6 +8,7 @@
 	// position: absolute;
 	top: 100%;
 	// @include clearfix;ss
+	position: relative;
 	z-index: 20;
 	@include mt;
 	top: 0;
@@ -16,7 +17,7 @@
 
 	&.fixed {
 		position: fixed;
-		width: 100vw;
+		width: 100%;
 		bottom: auto;
 		margin-top: 0;
 		.top-nav{
@@ -38,7 +39,10 @@
 		background-color: #fff;
 		position: absolute;
 		top: 100%;
-		width: rem(258);
+		width: rem(226);
+		@include media-breakpoint-up(xl){
+			width: rem(278);
+		}
 		right: 0;
 		margin-bottom: 0;
 		text-align: center;
@@ -92,9 +96,9 @@
 		position: absolute;
 		top: 0;
 		left: calc(100% - 1px);
-		width: rem(675);
+		width: rem(705);
 		@include media-breakpoint-up(xl){
-			width: rem(870);
+			width: rem(855);
 		}
 		background-color: #fff;
 		padding: rem(20) rem(20) 0;
@@ -168,7 +172,10 @@
 		line-height: 1;
 		font-size: rem(16);
 		background-color: #ff8b2d;
-		padding: rem(15) rem(50);
+		padding: rem(15) rem(35);
+		@include media-breakpoint-up(xl){
+			padding: rem(15) rem(60);
+		}
 		text-transform: uppercase;
 		&:hover{
 			color: #fff;
