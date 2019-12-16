@@ -37,6 +37,9 @@ html {
 }
 
 body {
+	background-image: url(../img/body-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 	min-width: 320px;
 	position: relative; 
 	&::before {
