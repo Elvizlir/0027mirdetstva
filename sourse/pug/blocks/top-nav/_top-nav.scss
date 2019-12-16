@@ -244,7 +244,28 @@
 			@include media-breakpoint-up(sm){
 				font-size: rem(28);
 			}
+			&-basket{
+				color: $primary;
+			}
 		}
+		&--basket{
+			position: relative;
+		}
+	}
+
+	&__basket-count{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 1;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: rem(18);
+		height: rem(18);
+		border-radius: 50%;
+		background-color: $primary;
+		transform: translate(50%, -50%);
 	}
 
 	&__phone-col{
