@@ -5,17 +5,12 @@
 	padding: rem(15) 0 rem(10);
 
 	&__row{
-		@include media-breakpoint-down(sm){
-			@include roww(10);
-		}
+		@include roww(10);
 	}
 
 	&__col{
-		@include media-breakpoint-down(sm){
-			margin-bottom: rem(20);
-		}
 		@include media-breakpoint-down(md){
-			margin-bottom: rem(30);
+			margin-bottom: rem(20);
 		}
 	}
 
@@ -66,12 +61,13 @@
 		width: 100%;
 		padding: rem(10) rem(5);
 		@include media-breakpoint-up(sm){	
-			padding: rem(20) rem(45);
+			padding: rem(20) rem(50);
 		}
 		@include media-breakpoint-up(xl){
-			padding: rem(20) rem(70);
+			padding: rem(20) rem(75);
 		}
 	}
+
 
 @include media-breakpoint-up(xl) {}
 @include media-breakpoint-up(lg) {}

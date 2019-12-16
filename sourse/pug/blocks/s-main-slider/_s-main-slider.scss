@@ -124,27 +124,33 @@
 		}
 	}
 
-	&__slider-btn{
+	.slick-arrow{
 		@include a-cent(y);
 		width: rem(32);
 		height: rem(32);
 		border-radius: 50%;
+		@include mt;
 		background-color: transparent;
 		border: 2px solid #d1d1d1;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		&--left{
+		&.l{
 			left: rem(10);
 		}
-		&--right{
+		&.r{
 			right: rem(10);
 		}
-		.icon{
-			font-size: rem(20) !important;
-			// height: rem(4) !important;
-			color: #d1d1d1;
-			// width: rem(8) !important;
+		svg{
+			@include mt;
+			width: rem(18);
+			fill: #d1d1d1;
+		}
+		&:hover{
+			background-color: #d1d1d1;
+			svg{
+				fill: #fff;
+			}
 		}
 	}
 

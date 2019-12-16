@@ -5,10 +5,6 @@ mixin s-main-slider()
 			.row
 				.col-lg-9.offset-lg-3
 					+e.slider-wrap
-						+e.slider-btn--left.btn
-							+icon('left-arrow')
-						+e.slider-btn--right.btn
-							+icon('right-arrow')
 						+e.slider--js
 							mixin main-slide()
 								.slick-slide

@@ -466,3 +466,22 @@ a{
 	height: 100%;
 	object-fit: cover;
 }
+
+h2{
+	line-height: 1;
+	font-family: $extra-font;
+	color: #1c1c1c;
+	border-bottom: 2px solid #c4c4c4;
+	position: relative;
+	margin-bottom: rem(12);
+	padding-bottom: rem(2);
+	&::after{
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: rem(7);
+		width: rem(135);
+		background: linear-gradient(90deg, rgba(255,144,1,1) 10%, rgba(249,255,0,0) 100%);
+	}
+}
