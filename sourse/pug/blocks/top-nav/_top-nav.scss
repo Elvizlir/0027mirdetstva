@@ -244,12 +244,13 @@
 			@include media-breakpoint-up(sm){
 				font-size: rem(28);
 			}
-			&-basket{
-				color: $primary;
-			}
 		}
-		&--basket{
-			position: relative;
+	}
+	
+	.basket-active{
+		position: relative;
+		.icon{
+			color: $primary;
 		}
 	}
 
