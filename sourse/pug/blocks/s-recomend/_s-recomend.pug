@@ -1,6 +1,6 @@
 mixin s-recomend()
 	// start s-recomend
-	+b.SECTION.s-recomend.section#s-recomend&attributes(attributes)
+	+b.SECTION.s-recomend.section&attributes(attributes)
 		.container
 			h2 Мы рекомендуем
 			+e.slider-wrap
@@ -8,6 +8,11 @@ mixin s-recomend()
 					mixin new-slide()
 						.slick-slide
 							+e.item
+								+e.icon-wrap
+									+e.icon-btn.btn
+										+icon('heart')
+									+e.icon-btn.btn
+										+icon('compare')
 								+e.img-wrap.bg-wrap
 									img.bg-img(src='img/@2x/new1.jpg' alt='')
 								+e.A.item-title(href='#') Приталенное подростковое платье MEVIS 3137-02

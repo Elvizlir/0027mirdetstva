@@ -8,6 +8,11 @@ mixin s-new()
 					mixin new-slide()
 						.slick-slide
 							+e.item
+								+e.icon-wrap
+									+e.icon-btn.btn
+										+icon('heart')
+									+e.icon-btn.btn
+										+icon('compare')
 								+e.img-wrap.bg-wrap
 									img.bg-img(src='img/@2x/new1.jpg' alt='')
 								+e.A.item-title(href='#') Приталенное подростковое платье MEVIS 3137-02

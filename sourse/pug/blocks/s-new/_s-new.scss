@@ -133,6 +133,25 @@
 			}
 		}
 	}
+
+	&__icon-wrap{
+		z-index: 4;
+		position: absolute;
+		top: rem(10);
+		right: rem(10);
+		.icon{
+			font-size: rem(25);
+			color: $primary;
+		}
+	}
+
+	&__icon-btn{
+		display: block;
+		@include mt;
+		&:hover{
+			opacity: .7;
+		}
+	}
 		
 @include media-breakpoint-up(xl) {}
 @include media-breakpoint-up(lg) {}
