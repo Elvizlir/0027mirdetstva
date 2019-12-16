@@ -1,0 +1,18 @@
+mixin s-advantages()
+	// start s-advantages
+	+b.SECTION.s-advantages.section#s-advantages&attributes(attributes)
+		.container
+			h2 почему вам стоит выбрать именно нас
+			+e.row.row
+				mixin adv-i(i, t, s)
+					+e.col.col-xl-3.col-sm-6
+						+e.item
+							+e.img-wrap
+								img.res-i(src=`img/@2x/adv-i${i}.png` alt='')
+							+e.item-title=t
+							+e.item-subtitle=s
+				+adv-i('1','Бесплатная доставка','При заказе от 1000 грн.')
+				+adv-i('2','Защита покупателя','Возврат в течение 11 дней')
+				+adv-i('3','Поддержка клиентов','+38 (050) 301-44-68')
+				+adv-i('4','Принимаем заказы','Принимаем заказы 24/7')
+	// end s-advantages
