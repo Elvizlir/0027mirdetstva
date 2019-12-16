@@ -1,4 +1,47 @@
 mixin footer()
 	+b.FOOTER.footer.block-with-lazy
 		.container
-			h2 footer
+			+e.row.row
+				+e.col.col-xl
+					+e.A.title-block(href='/')
+						+e.logo-wrap
+							img.res-i(src='img/@2x/logo.png' alt='')
+						+e.text-wrap
+							+e.title
+								span М
+								|ир детства
+							+e.subtitle одежда и обувь для<br>детей и подростков
+					+e.descr Интернет-магазин товаров для детей.
+					+soc()
+
+				+e.col.col-xl-2.col-md-4
+					+e.col-title Информация
+					ul
+						li
+							a(href='#') О магазине
+						li
+							a(href='#') Оплата - Доставка
+						li
+							a(href='#') Политика безопасности
+						li
+							a(href='#') Условия соглашения
+				+e.col.col-xl-2.col-md-4
+					+e.col-title Служба поддержки
+					ul
+						li
+							a(href='#') Связаться с нами
+						li
+							a(href='#') Возврат товара
+						li
+							a(href='#') Карта сайта
+				+e.col.col-xl-2.col-md-4
+					+e.col-title Личный кабинет
+					ul
+						li
+							a(href='#') Личный кабинет
+						li
+							a(href='#') История заказов
+						li
+							a(href='#') Мои закладки
+						li
+							a(href='#') Рассылка новостей
