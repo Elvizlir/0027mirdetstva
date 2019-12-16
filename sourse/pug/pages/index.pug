@@ -4,6 +4,7 @@ extends layout/main.pug
 include ../blocks/s-content/_s-content.pug
 include ../blocks/s-contact/_s-contact.pug
 include ../blocks/s-main-slider/_s-main-slider.pug
+include ../blocks/s-categories/_s-categories.pug
 
 block variables
 	- let  mainPage= 'main-page'
@@ -17,7 +18,7 @@ block pagecontent
 		+top-nav()
 	//- +header-block()
 	+s-main-slider()(class='top-section')
-	+s-form()
+	+s-categories()
 	+s-form()
 	+s-form()
 	+s-form()

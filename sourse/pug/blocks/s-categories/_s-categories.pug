@@ -1,0 +1,15 @@
+mixin s-categories()
+	// start s-categories
+	+b.s-categories.section#s-categories&attributes(attributes)
+		.container
+			+e.row.row
+				mixin categories-i(i, t)
+					+e.col.col-lg-3.col-6
+						+e.A.item.bg-wrap(href='#')
+							img.bg-img(src=`img/@2x/categories${i}.jpg` alt='')
+							+e.item-title=t
+				+categories-i('1','Школьная форма для девочек')
+				+categories-i('2','Школьная форма для мальчиков')
+				+categories-i('3','Обувь для девочек')
+				+categories-i('4','Обувь для мальчиков')
+	// end s-categories

@@ -39,9 +39,9 @@
 		background-color: #fff;
 		position: absolute;
 		top: 100%;
-		width: rem(226);
+		width: rem(211);
 		@include media-breakpoint-up(xl){
-			width: rem(278);
+			width: rem(260);
 		}
 		right: 0;
 		margin-bottom: 0;
@@ -96,9 +96,9 @@
 		position: absolute;
 		top: 0;
 		left: calc(100% - 1px);
-		width: rem(705);
+		width: rem(720);
 		@include media-breakpoint-up(xl){
-			width: rem(855);
+			width: rem(869);
 		}
 		background-color: #fff;
 		padding: rem(20) rem(20) 0;
@@ -172,9 +172,9 @@
 		line-height: 1;
 		font-size: rem(16);
 		background-color: #ff8b2d;
-		padding: rem(15) rem(35);
+		padding: rem(15) rem(27);
 		@include media-breakpoint-up(xl){
-			padding: rem(15) rem(60);
+			padding: rem(15) rem(53);
 		}
 		text-transform: uppercase;
 		&:hover{
