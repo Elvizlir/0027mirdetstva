@@ -264,6 +264,46 @@ function eventHandler() {
 		]
 
 	});
+	$('.s-recomend__slider--js').slick({
+		...defaultSlide,
+
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: true,
+		appendDots: $('.s-recomend__slider-dots'),
+		// prevArrow: $('.s-main-slider__slider-btn--left'),
+		// nextArrow: $('.s-main-slider__slider-btn--right'),
+
+		responsive: [
+			{
+				breakpoint: 990,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: true
+				}
+			},
+			{
+				breakpoint: 770,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			}
+			// You can unslick at a given breakpoint now by adding:
+			// settings: "unslick"
+			// instead of a settings object
+		]
+
+	});
 	// $('.s-gal__slider\
 	// ,.slider-for2 ')
 	// 	.on('lazyLoaded', function (event, slick, image, imageSource) {

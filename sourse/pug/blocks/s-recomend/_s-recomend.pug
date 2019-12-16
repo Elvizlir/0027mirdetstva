@@ -1,0 +1,24 @@
+mixin s-recomend()
+	// start s-recomend
+	+b.SECTION.s-recomend.section#s-recomend&attributes(attributes)
+		.container
+			h2 Мы рекомендуем
+			+e.slider-wrap
+				+e.slider--js
+					mixin new-slide()
+						.slick-slide
+							+e.item
+								+e.img-wrap.bg-wrap
+									img.bg-img(src='img/@2x/new1.jpg' alt='')
+								+e.A.item-title(href='#') Приталенное подростковое платье MEVIS 3137-02
+								+e.item-order
+									+e.item-price 420 грн.
+									+e.item-btn.btn.btn-primary в корзину
+					+new-slide()
+					+new-slide()
+					+new-slide()
+					+new-slide()
+					+new-slide()
+					+new-slide()
+				+e.slider-dots
+	// end s-recomend

@@ -1,6 +1,7 @@
 
-// start .s-new
-.s-new {
+// start .s-recomend
+.s-recomend {
+
 	padding: rem(10) 0 rem(30);
 
 	&__slider-wrap{
@@ -158,4 +159,4 @@
 @include media-breakpoint-down(sm) {}
 @include media-breakpoint-down(xs) {} 
 
-} // end.s-new
+} // end.s-recomend
