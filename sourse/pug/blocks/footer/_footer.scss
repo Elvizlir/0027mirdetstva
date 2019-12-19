@@ -1,10 +1,13 @@
 .footer {
+  background-color: #2723dd;
   padding: rem(30) 0 0;
+
+  // предыдущее меню
+
   @include media-breakpoint-up(xl){
     padding: rem(40) 0;
   }
   color: #fff;
-  background-color: #1c15a9;
     
   
   &__row{
@@ -64,22 +67,28 @@
   }
 
   &__col-title{
+    border-bottom: 1px solid #fff;
     text-transform: uppercase;
     line-height: 1.23;
     font-size: rem(18);
     font-weight: 600;
+    padding-bottom: rem(5);
     margin-bottom: rem(15);
   }
 
   ul{
-    margin: 0;
+    margin-bottom: rem(20);
     list-style: none;
+  }
+  
+  .soc{
+    margin-bottom: rem(20);
   }
 
   li{
     line-height: 1.2;
     a{
-      color: #a8a8a8;
+      color: #fff;
       font-size: rem(16);
       &:hover{
         text-decoration: none;
@@ -90,6 +99,9 @@
       margin-bottom: rem(5);
     }
   }
+
+  // конец предыдущего меню
+
 
 
 // 

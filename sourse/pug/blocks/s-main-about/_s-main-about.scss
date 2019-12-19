@@ -4,7 +4,7 @@
 	padding: rem(10) 0 rem(30);
 
 	h3{
-		font-size: rem(24);
+		font-size: rem(20);
 		font-weight: bold;
 		line-height: 1;
 		margin-bottom: rem(10);
@@ -12,8 +12,20 @@
 		
 	p{
 		color: #000000;
-		font-size: rem(15);
+		font-size: rem(12);
 		line-height: 1.08;
+	}
+
+	&__img-block{
+		@include media-breakpoint-down(md){
+			justify-content: center;
+		}
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	&__img-item{
+		margin-bottom: rem(20);
 	}
 
 @include media-breakpoint-up(xl) {}

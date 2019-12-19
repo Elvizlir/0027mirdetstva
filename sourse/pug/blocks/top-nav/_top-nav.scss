@@ -3,7 +3,7 @@
 	@include media-breakpoint-down(md){
 		padding: rem(5) 0;
 	}
-	background-color: #1c15a9;
+	background-color: #2723dd;
 	color: #ffffff;
 	// position: absolute;
 	top: 100%;
@@ -16,6 +16,9 @@
 	width: 100%;
 
 	&.fixed {
+		@include media-breakpoint-down(md){
+			padding: rem(8) 0;
+		}
 		position: fixed;
 		width: 100%;
 		bottom: auto;
@@ -24,6 +27,23 @@
 			&__phone-col{
 				@include media-breakpoint-up(lg){
 					display: block !important;
+				}
+			}
+			&__home{
+				margin: 0;
+				.icon{
+					display: none !important;
+				}
+			}
+			&__mob-logo{
+				display: block !important;
+			}
+
+			&__home-col{
+				display: flex;
+				align-items: center;
+				@include media-breakpoint-up(sm){
+					justify-content: center;
 				}
 			}
 		}
@@ -58,12 +78,13 @@
 			margin-top: -1px;
 		}
 		& > a{
+			color: #1c15a9;
 			display: block;
 			border: 1px solid #adadad;
 			padding: rem(16);
 			font-size: rem(14);
 			font-weight: bold;
-			color: #191919;
+			// color: #191919;
 			&:hover{
 				text-decoration: none;
 			}
@@ -117,12 +138,13 @@
 		line-height: 1.2;
 		// text-align: center;
 		a{
+			color: #1c15a9;
 			display: inline;
 			border-bottom: 1px solid transparent;
-			color: #191919;
+			// color: #191919;
 			&:hover{
 				text-decoration: none;
-				border-bottom: 1px solid #ccc;
+				border-bottom: 1px solid #1c15a9;
 			}
 		}
 	}
@@ -143,19 +165,14 @@
 		}
 		display: inline-block;
 		.icon{
-			@include media-breakpoint-down(md){
-				display: none;
-			}
 			color: #fff;
 			font-size: rem(22);
 		}
 	}
 
 	&__mob-logo{
+		display: none;
 		max-width: rem(35);
-		@include media-breakpoint-up(lg){
-			display: none;
-		}
 	}
 
 	&__mnu-wrap{
@@ -172,9 +189,9 @@
 		line-height: 1;
 		font-size: rem(16);
 		background-color: #ff8b2d;
-		padding: rem(15) rem(31);
+		padding: rem(15) rem(40);
 		@include media-breakpoint-up(xl){
-			padding: rem(15) rem(56);
+			padding: rem(15) rem(66);
 		}
 		text-transform: uppercase;
 		&:hover{
@@ -270,9 +287,9 @@
 	}
 
 	&__phone-col{
-		@include media-breakpoint-up(lg){
-			display: none;
-		}
+		// @include media-breakpoint-up(lg){
+		// 	display: none;
+		// }
 	}
 
 	&__phone-block{

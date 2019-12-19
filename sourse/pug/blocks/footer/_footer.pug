@@ -2,46 +2,102 @@ mixin footer()
 	+b.FOOTER.footer.block-with-lazy
 		.container
 			+e.row.row
-				+e.col.col-xl
-					+e.A.title-block(href='/')
-						+e.logo-wrap
-							img.res-i(src='img/@2x/logo.png' alt='')
-						+e.text-wrap
-							+e.title
-								span М
-								|ир детства
-							+e.subtitle одежда и обувь для<br>детей и подростков
-					+e.descr Интернет-магазин товаров для детей.
+				+e.col.col-lg-3.col-sm-6
+					+e.col-title Покупателю
+					ul
+						li
+							a(href='#') Вход в кабинет
+						li
+							a(href='#') Контакты
+						li
+							a(href='#') Доставка и оплата
+						li
+							a(href='#') Публичная оферта
+						li
+							a(href='#') Таблица размеров
+						li
+							a(href='#') Описание тканей
+				+e.col.col-lg-3.col-sm-6
+					+e.col-title Категории
+					ul
+						li
+							a(href='#') Детская обувь
+						li
+							a(href='#') Детская одежда
+						li
+							a(href='#') Школьная форма
+						li
+							a(href='#') Одежда для новорожденных
+						li
+							a(href='#') Детские коляски
+						li
+							a(href='#') Стульчики для кормления
+				+e.col.col-lg-3.col-sm-6
+					+e.col-title Вакансии
+					ul
+						li
+							a(href='#') Маркетолог
+						li
+							a(href='#') Продавец-консультант
+					+e.col-title мы в соц сетях
 					+soc()
+				+e.col.col-lg-3.col-sm-6
+					+e.col-title Мир детства
+					ul
+						li © 2017-2019 Мир Детства
+						li
+							a(href='tel:+380503014468') +38 (050) 301-44-68
+						li
+							a(href='tel:+380978335676') +38 (097) 833-56-76
+						li
+							a(href='mailto:eshop@mirdetstva.net') eshop@mirdetstva.net
+						li
+							a(href='#') Посетите наш магазин
 
-				+e.col.col-xl-2.col-md-4
-					+e.col-title Информация
-					ul
-						li
-							a(href='#') О магазине
-						li
-							a(href='#') Оплата - Доставка
-						li
-							a(href='#') Политика безопасности
-						li
-							a(href='#') Условия соглашения
-				+e.col.col-xl-2.col-md-4
-					+e.col-title Служба поддержки
-					ul
-						li
-							a(href='#') Связаться с нами
-						li
-							a(href='#') Возврат товара
-						li
-							a(href='#') Карта сайта
-				+e.col.col-xl-2.col-md-4
-					+e.col-title Личный кабинет
-					ul
-						li
-							a(href='#') Личный кабинет
-						li
-							a(href='#') История заказов
-						li
-							a(href='#') Мои закладки
-						li
-							a(href='#') Рассылка новостей
+
+			// предыдущее меню
+			//- +e.row.row
+			//- 	+e.col.col-xl
+			//- 		+e.A.title-block(href='/')
+			//- 			+e.logo-wrap
+			//- 				img.res-i(src='img/@2x/logo.png' alt='')
+			//- 			+e.text-wrap
+			//- 				+e.title
+			//- 					span М
+			//- 					|ир детства
+			//- 				+e.subtitle одежда и обувь для<br>детей и подростков
+			//- 		+e.descr Интернет-магазин товаров для детей.
+			//- 		+soc()
+
+			//- 	+e.col.col-xl-2.col-md-4
+			//- 		+e.col-title Информация
+			//- 		ul
+			//- 			li
+			//- 				a(href='#') О магазине
+			//- 			li
+			//- 				a(href='#') Оплата - Доставка
+			//- 			li
+			//- 				a(href='#') Политика безопасности
+			//- 			li
+			//- 				a(href='#') Условия соглашения
+			//- 	+e.col.col-xl-2.col-md-4
+			//- 		+e.col-title Служба поддержки
+			//- 		ul
+			//- 			li
+			//- 				a(href='#') Связаться с нами
+			//- 			li
+			//- 				a(href='#') Возврат товара
+			//- 			li
+			//- 				a(href='#') Карта сайта
+			//- 	+e.col.col-xl-2.col-md-4
+			//- 		+e.col-title Личный кабинет
+			//- 		ul
+			//- 			li
+			//- 				a(href='#') Личный кабинет
+			//- 			li
+			//- 				a(href='#') История заказов
+			//- 			li
+			//- 				a(href='#') Мои закладки
+			//- 			li
+			//- 				a(href='#') Рассылка новостей
+			// конец предыдущего меню

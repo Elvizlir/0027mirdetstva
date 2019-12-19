@@ -16,7 +16,7 @@
 
 	&__item{
 		overflow: hidden;
-		border: 1px solid #6666ff;
+		border: 1px solid #adadad;
 		text-align: center;
 		color: #ffffff;
 		font-size: rem(14);
@@ -50,6 +50,8 @@
 	}
 
 	&__item-title{
+		height: rem(50);
+		font-size: rem(16);
 		line-height: 1.32;
 		@include mt;
 		z-index: 2;
@@ -57,14 +59,16 @@
 		position: absolute;
 		bottom: 0;
 		left: 0;
-		display: block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		width: 100%;
-		padding: rem(10) rem(5);
+		padding: rem(5) rem(10);
 		@include media-breakpoint-up(sm){	
-			padding: rem(20) rem(50);
+			// padding: rem(20);
 		}
 		@include media-breakpoint-up(xl){
-			padding: rem(20) rem(75);
+			// padding: rem(20);
 		}
 	}
 

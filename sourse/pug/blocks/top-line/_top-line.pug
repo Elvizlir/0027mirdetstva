@@ -12,6 +12,15 @@ mixin top-line()
 								span М
 								|ир детства
 							+e.subtitle одежда и обувь для<br>детей и подростков
+				.col.d-none.d-xl-block
+					+e.adress г.Харьков, пл. Конституции,9 ТЦ «Детский мир», 3-й этаж
+					+e.time
+						span пн.-сб.
+						span 9-00 - 18-30
+					+e.time
+						span вс.
+						span 10-00 - 17-30
+
 				.col-auto
 					+e.contact-row.row
 						.col-auto.d-none.d-lg-block
@@ -21,5 +30,10 @@ mixin top-line()
 									+e.number +38 (050) 301-44-68
 									+e.number-text Обратный звонок
 						.col-auto
+							+e.lang
+								a.active(href='#') Ru
+								span /
+								a(href='#') Ua
+						.col-auto.d-none.d-sm-block
 							+soc()
 	// end .top-line

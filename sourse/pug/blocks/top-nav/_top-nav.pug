@@ -17,7 +17,7 @@ mixin top-nav()
 				.col-auto.d-lg-none
 					+b.toggle-menu-mobile--js.d-lg-none
 						span
-				.col-sm-auto.col
+				+e.home-col.col-sm-auto.col
 					+e.A.home(href='#')
 						+e.IMG.mob-logo.res-i(src='img/@2x/logo.png' alt='')
 						+icon('home')
@@ -26,7 +26,7 @@ mixin top-nav()
 						+icon('search')
 				.col-auto.d-none.d-lg-block
 					+e.mnu-wrap
-						+e.A.catalog(href='#') категории
+						+e.A.catalog(href='#') каталог
 						+mnu()
 				+e.form-col.col-sm.order-sm-0.order-last
 					+form-wrap
@@ -35,6 +35,12 @@ mixin top-nav()
 						+input('Поиск товара по каталогу')(autocomplete='off')
 						+e.input-close--js.d-sm-none
 							+icon('close')
+				+e.phone-col.col-auto
+					+e.A.phone-block(href='tel:+380503014468')
+						+icon('phone')
+						+e.number-block
+							+e.number +38 (050) 301-44-68
+							+e.number-text Обратный звонок
 				.col-auto
 					+e.A.icon-item(href='#')
 						+icon('heart')
@@ -43,11 +49,5 @@ mixin top-nav()
 						+icon('basket')
 					+e.A.icon-item(href='#')
 						+icon('user')
-				+e.phone-col.col-auto
-					+e.A.phone-block(href='tel:+380503014468')
-						+icon('phone')
-						+e.number-block
-							+e.number +38 (050) 301-44-68
-							+e.number-text Обратный звонок
 					
 	// end top-nav

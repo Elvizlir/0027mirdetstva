@@ -82,7 +82,7 @@ $h: em(2);
 	will-change: transform;
 
 	&__inner {
-		background-color: #1c15a9;
+		background-color: #fff;
 		padding: 5% 0;
 		overflow-y: auto;
 		-webkit-overflow-scrolling: touch;
@@ -91,6 +91,12 @@ $h: em(2);
 
 	.soc{
 		margin-left: rem(10);
+		&__item{
+			border-color: #1c15a9;
+		}
+		.icon{
+			color: #1c15a9;
+		}
 	}
 
 	&.active {
@@ -136,11 +142,11 @@ $h: em(2);
 	li {
 		display: block;
 		margin: 0;
-		border-top: 1px solid rgba(255, 255, 255, .13);
+		border-top: 1px solid #adadad;
 
 		a {
 			// font-size: 16px;
-			color: #fff;
+			color: #1c15a9;
 			padding: 10px;
 			display: block;
  

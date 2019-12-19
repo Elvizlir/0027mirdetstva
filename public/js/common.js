@@ -138,10 +138,10 @@ function eventHandler() {
 		var topN = $(".top-nav").innerHeight();
 		$(window).scroll(function () {
 			if ($(window).scrollTop() > topL) {
-				$('.top-section').css('margin-top', topN);
+				// $('.top-section').css('margin-top',topN);
 				$('.top-nav  ').addClass('fixed');
 			} else {
-				$('.top-section').css('margin-top', '0');
+				// $('.top-section').css('margin-top','0');
 				$('.top-nav  ').removeClass('fixed');
 			}
 		}); // конец добавил

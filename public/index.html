@@ -378,8 +378,8 @@
 						<svg class="icon icon-insta ">
 							<use xlink:href="img/svg/sprite.svg#insta"></use>
 						</svg></a><a class="soc__item" href="№" target="_blank">
-						<svg class="icon icon-vk ">
-							<use xlink:href="img/svg/sprite.svg#vk"></use>
+						<svg class="icon icon-viber ">
+							<use xlink:href="img/svg/sprite.svg#viber"></use>
 						</svg></a>
 					</div>
 					<div class="text-right"></div>
@@ -394,6 +394,14 @@
 						<div class="top-line__main-row row">
 							<div class="col-auto"><a class="top-line__title-block" href="/"><span class="top-line__logo-wrap"><img class="res-i" src="img/@2x/logo.png" alt=""/></span><span class="top-line__text-wrap"><span class="top-line__title"><span>М</span>ир детства</span><span class="top-line__subtitle">одежда и обувь для<br>детей и подростков</span></span></a>
 							</div>
+							<div class="col d-none d-xl-block">
+								<div class="top-line__adress">г.Харьков, пл. Конституции,9 ТЦ «Детский мир», 3-й этаж
+								</div>
+								<div class="top-line__time"><span>пн.-сб.</span><span>9-00 - 18-30</span>
+								</div>
+								<div class="top-line__time"><span>вс.</span><span>10-00 - 17-30</span>
+								</div>
+							</div>
 							<div class="col-auto">
 								<div class="top-line__contact-row row">
 									<div class="col-auto d-none d-lg-block"><a class="top-line__phone-block" href="tel:+380503014468">
@@ -402,6 +410,10 @@
 										</svg><span class="top-line__number-wrap"><span class="top-line__number">+38 (050) 301-44-68</span><span class="top-line__number-text">Обратный звонок</span></span></a>
 									</div>
 									<div class="col-auto">
+										<div class="top-line__lang"><a class="active" href="#">Ru</a><span>/</span><a href="#">Ua</a>
+										</div>
+									</div>
+									<div class="col-auto d-none d-sm-block">
 										<div class="soc"><a class="soc__item d-lg-none" href="№" target="_blank">
 											<svg class="icon icon-phone ">
 												<use xlink:href="img/svg/sprite.svg#phone"></use>
@@ -409,8 +421,8 @@
 											<svg class="icon icon-insta ">
 												<use xlink:href="img/svg/sprite.svg#insta"></use>
 											</svg></a><a class="soc__item" href="№" target="_blank">
-											<svg class="icon icon-vk ">
-												<use xlink:href="img/svg/sprite.svg#vk"></use>
+											<svg class="icon icon-viber ">
+												<use xlink:href="img/svg/sprite.svg#viber"></use>
 											</svg></a>
 										</div>
 									</div>
@@ -428,7 +440,7 @@
 								<div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
 								</div>
 							</div>
-							<div class="col-sm-auto col"><a class="top-nav__home" href="#"><img class="top-nav__mob-logo res-i" src="img/@2x/logo.png" alt="" role="presentation"/>
+							<div class="top-nav__home-col col-sm-auto col"><a class="top-nav__home" href="#"><img class="top-nav__mob-logo res-i" src="img/@2x/logo.png" alt="" role="presentation"/>
 								<svg class="icon icon-home ">
 									<use xlink:href="img/svg/sprite.svg#home"></use>
 								</svg></a>
@@ -441,7 +453,7 @@
 								</div>
 							</div>
 							<div class="col-auto d-none d-lg-block">
-								<div class="top-nav__mnu-wrap"><a class="top-nav__catalog" href="#">категории</a>
+								<div class="top-nav__mnu-wrap"><a class="top-nav__catalog" href="#">каталог</a>
 									<ul class="top-nav__nav" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 										<li class="top-nav__item menu-item-has-children" itemprop="item"><a class="top-nav__link" href="#" itemprop="url">Одежда для девочек</a>
 											<div class="top-nav__submenu">
@@ -809,6 +821,11 @@
 									</form>
 								</div>
 							</div>
+							<div class="top-nav__phone-col col-auto"><a class="top-nav__phone-block" href="tel:+380503014468">
+								<svg class="icon icon-phone ">
+									<use xlink:href="img/svg/sprite.svg#phone"></use>
+								</svg><span class="top-nav__number-block"><span class="top-nav__number">+38 (050) 301-44-68</span><span class="top-nav__number-text">Обратный звонок</span></span></a>
+							</div>
 							<div class="col-auto"><a class="top-nav__icon-item" href="#">
 								<svg class="icon icon-heart ">
 									<use xlink:href="img/svg/sprite.svg#heart"></use>
@@ -819,11 +836,6 @@
 								<svg class="icon icon-user ">
 									<use xlink:href="img/svg/sprite.svg#user"></use>
 								</svg></a>
-							</div>
-							<div class="top-nav__phone-col col-auto"><a class="top-nav__phone-block" href="tel:+380503014468">
-								<svg class="icon icon-phone ">
-									<use xlink:href="img/svg/sprite.svg#phone"></use>
-								</svg><span class="top-nav__number-block"><span class="top-nav__number">+38 (050) 301-44-68</span><span class="top-nav__number-text">Обратный звонок</span></span></a>
 							</div>
 						</div>
 					</div>
@@ -894,147 +906,159 @@
 					<div class="s-new__slider-wrap">
 						<div class="s-new__slider s-new__slider--js">
 							<div class="slick-slide">
-								<div class="s-new__item">
-									<div class="s-new__icon-wrap">
-										<div class="s-new__icon-btn btn">
-											<svg class="icon icon-heart ">
-												<use xlink:href="img/svg/sprite.svg#heart"></use>
-											</svg>
+								<div class="s-new__item"><a href="">
+										<div class="s-new__icon-wrap">
+											<div class="s-new__icon-btn btn">
+												<svg class="icon icon-heart ">
+													<use xlink:href="img/svg/sprite.svg#heart"></use>
+												</svg>
+											</div>
+											<div class="s-new__icon-btn btn">
+												<svg class="icon icon-compare ">
+													<use xlink:href="img/svg/sprite.svg#compare"></use>
+												</svg>
+											</div>
 										</div>
-										<div class="s-new__icon-btn btn">
-											<svg class="icon icon-compare ">
-												<use xlink:href="img/svg/sprite.svg#compare"></use>
-											</svg>
+										<div class="s-new__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/new1.jpg" alt=""/>
 										</div>
-									</div>
-									<div class="s-new__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/new1.jpg" alt=""/>
-									</div><a class="s-new__item-title" href="#">Приталенное подростковое платье MEVIS 3137-02</a>
-									<div class="s-new__item-order">
-										<div class="s-new__item-price">420 грн.
+										<div class="s-new__item-title">Приталенное подростковое платье MEVIS 3137-02
 										</div>
-										<div class="s-new__item-btn btn btn-primary">в корзину
-										</div>
-									</div>
+										<div class="s-new__item-order">
+											<div class="s-new__item-price">420 грн.
+											</div>
+											<div class="s-new__item-btn btn btn-primary">в корзину
+											</div>
+										</div></a>
 								</div>
 							</div>
 							<div class="slick-slide">
-								<div class="s-new__item">
-									<div class="s-new__icon-wrap">
-										<div class="s-new__icon-btn btn">
-											<svg class="icon icon-heart ">
-												<use xlink:href="img/svg/sprite.svg#heart"></use>
-											</svg>
+								<div class="s-new__item"><a href="">
+										<div class="s-new__icon-wrap">
+											<div class="s-new__icon-btn btn">
+												<svg class="icon icon-heart ">
+													<use xlink:href="img/svg/sprite.svg#heart"></use>
+												</svg>
+											</div>
+											<div class="s-new__icon-btn btn">
+												<svg class="icon icon-compare ">
+													<use xlink:href="img/svg/sprite.svg#compare"></use>
+												</svg>
+											</div>
 										</div>
-										<div class="s-new__icon-btn btn">
-											<svg class="icon icon-compare ">
-												<use xlink:href="img/svg/sprite.svg#compare"></use>
-											</svg>
+										<div class="s-new__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/new1.jpg" alt=""/>
 										</div>
-									</div>
-									<div class="s-new__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/new1.jpg" alt=""/>
-									</div><a class="s-new__item-title" href="#">Приталенное подростковое платье MEVIS 3137-02</a>
-									<div class="s-new__item-order">
-										<div class="s-new__item-price">420 грн.
+										<div class="s-new__item-title">Приталенное подростковое платье MEVIS 3137-02
 										</div>
-										<div class="s-new__item-btn btn btn-primary">в корзину
-										</div>
-									</div>
+										<div class="s-new__item-order">
+											<div class="s-new__item-price">420 грн.
+											</div>
+											<div class="s-new__item-btn btn btn-primary">в корзину
+											</div>
+										</div></a>
 								</div>
 							</div>
 							<div class="slick-slide">
-								<div class="s-new__item">
-									<div class="s-new__icon-wrap">
-										<div class="s-new__icon-btn btn">
-											<svg class="icon icon-heart ">
-												<use xlink:href="img/svg/sprite.svg#heart"></use>
-											</svg>
+								<div class="s-new__item"><a href="">
+										<div class="s-new__icon-wrap">
+											<div class="s-new__icon-btn btn">
+												<svg class="icon icon-heart ">
+													<use xlink:href="img/svg/sprite.svg#heart"></use>
+												</svg>
+											</div>
+											<div class="s-new__icon-btn btn">
+												<svg class="icon icon-compare ">
+													<use xlink:href="img/svg/sprite.svg#compare"></use>
+												</svg>
+											</div>
 										</div>
-										<div class="s-new__icon-btn btn">
-											<svg class="icon icon-compare ">
-												<use xlink:href="img/svg/sprite.svg#compare"></use>
-											</svg>
+										<div class="s-new__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/new1.jpg" alt=""/>
 										</div>
-									</div>
-									<div class="s-new__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/new1.jpg" alt=""/>
-									</div><a class="s-new__item-title" href="#">Приталенное подростковое платье MEVIS 3137-02</a>
-									<div class="s-new__item-order">
-										<div class="s-new__item-price">420 грн.
+										<div class="s-new__item-title">Приталенное подростковое платье MEVIS 3137-02
 										</div>
-										<div class="s-new__item-btn btn btn-primary">в корзину
-										</div>
-									</div>
+										<div class="s-new__item-order">
+											<div class="s-new__item-price">420 грн.
+											</div>
+											<div class="s-new__item-btn btn btn-primary">в корзину
+											</div>
+										</div></a>
 								</div>
 							</div>
 							<div class="slick-slide">
-								<div class="s-new__item">
-									<div class="s-new__icon-wrap">
-										<div class="s-new__icon-btn btn">
-											<svg class="icon icon-heart ">
-												<use xlink:href="img/svg/sprite.svg#heart"></use>
-											</svg>
+								<div class="s-new__item"><a href="">
+										<div class="s-new__icon-wrap">
+											<div class="s-new__icon-btn btn">
+												<svg class="icon icon-heart ">
+													<use xlink:href="img/svg/sprite.svg#heart"></use>
+												</svg>
+											</div>
+											<div class="s-new__icon-btn btn">
+												<svg class="icon icon-compare ">
+													<use xlink:href="img/svg/sprite.svg#compare"></use>
+												</svg>
+											</div>
 										</div>
-										<div class="s-new__icon-btn btn">
-											<svg class="icon icon-compare ">
-												<use xlink:href="img/svg/sprite.svg#compare"></use>
-											</svg>
+										<div class="s-new__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/new1.jpg" alt=""/>
 										</div>
-									</div>
-									<div class="s-new__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/new1.jpg" alt=""/>
-									</div><a class="s-new__item-title" href="#">Приталенное подростковое платье MEVIS 3137-02</a>
-									<div class="s-new__item-order">
-										<div class="s-new__item-price">420 грн.
+										<div class="s-new__item-title">Приталенное подростковое платье MEVIS 3137-02
 										</div>
-										<div class="s-new__item-btn btn btn-primary">в корзину
-										</div>
-									</div>
+										<div class="s-new__item-order">
+											<div class="s-new__item-price">420 грн.
+											</div>
+											<div class="s-new__item-btn btn btn-primary">в корзину
+											</div>
+										</div></a>
 								</div>
 							</div>
 							<div class="slick-slide">
-								<div class="s-new__item">
-									<div class="s-new__icon-wrap">
-										<div class="s-new__icon-btn btn">
-											<svg class="icon icon-heart ">
-												<use xlink:href="img/svg/sprite.svg#heart"></use>
-											</svg>
+								<div class="s-new__item"><a href="">
+										<div class="s-new__icon-wrap">
+											<div class="s-new__icon-btn btn">
+												<svg class="icon icon-heart ">
+													<use xlink:href="img/svg/sprite.svg#heart"></use>
+												</svg>
+											</div>
+											<div class="s-new__icon-btn btn">
+												<svg class="icon icon-compare ">
+													<use xlink:href="img/svg/sprite.svg#compare"></use>
+												</svg>
+											</div>
 										</div>
-										<div class="s-new__icon-btn btn">
-											<svg class="icon icon-compare ">
-												<use xlink:href="img/svg/sprite.svg#compare"></use>
-											</svg>
+										<div class="s-new__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/new1.jpg" alt=""/>
 										</div>
-									</div>
-									<div class="s-new__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/new1.jpg" alt=""/>
-									</div><a class="s-new__item-title" href="#">Приталенное подростковое платье MEVIS 3137-02</a>
-									<div class="s-new__item-order">
-										<div class="s-new__item-price">420 грн.
+										<div class="s-new__item-title">Приталенное подростковое платье MEVIS 3137-02
 										</div>
-										<div class="s-new__item-btn btn btn-primary">в корзину
-										</div>
-									</div>
+										<div class="s-new__item-order">
+											<div class="s-new__item-price">420 грн.
+											</div>
+											<div class="s-new__item-btn btn btn-primary">в корзину
+											</div>
+										</div></a>
 								</div>
 							</div>
 							<div class="slick-slide">
-								<div class="s-new__item">
-									<div class="s-new__icon-wrap">
-										<div class="s-new__icon-btn btn">
-											<svg class="icon icon-heart ">
-												<use xlink:href="img/svg/sprite.svg#heart"></use>
-											</svg>
+								<div class="s-new__item"><a href="">
+										<div class="s-new__icon-wrap">
+											<div class="s-new__icon-btn btn">
+												<svg class="icon icon-heart ">
+													<use xlink:href="img/svg/sprite.svg#heart"></use>
+												</svg>
+											</div>
+											<div class="s-new__icon-btn btn">
+												<svg class="icon icon-compare ">
+													<use xlink:href="img/svg/sprite.svg#compare"></use>
+												</svg>
+											</div>
 										</div>
-										<div class="s-new__icon-btn btn">
-											<svg class="icon icon-compare ">
-												<use xlink:href="img/svg/sprite.svg#compare"></use>
-											</svg>
+										<div class="s-new__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/new1.jpg" alt=""/>
 										</div>
-									</div>
-									<div class="s-new__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/new1.jpg" alt=""/>
-									</div><a class="s-new__item-title" href="#">Приталенное подростковое платье MEVIS 3137-02</a>
-									<div class="s-new__item-order">
-										<div class="s-new__item-price">420 грн.
+										<div class="s-new__item-title">Приталенное подростковое платье MEVIS 3137-02
 										</div>
-										<div class="s-new__item-btn btn btn-primary">в корзину
-										</div>
-									</div>
+										<div class="s-new__item-order">
+											<div class="s-new__item-price">420 грн.
+											</div>
+											<div class="s-new__item-btn btn btn-primary">в корзину
+											</div>
+										</div></a>
 								</div>
 							</div>
 						</div>
@@ -1051,147 +1075,159 @@
 					<div class="s-recomend__slider-wrap">
 						<div class="s-recomend__slider s-recomend__slider--js">
 							<div class="slick-slide">
-								<div class="s-recomend__item">
-									<div class="s-recomend__icon-wrap">
-										<div class="s-recomend__icon-btn btn">
-											<svg class="icon icon-heart ">
-												<use xlink:href="img/svg/sprite.svg#heart"></use>
-											</svg>
+								<div class="s-recomend__item"><a href="">
+										<div class="s-recomend__icon-wrap">
+											<div class="s-recomend__icon-btn btn">
+												<svg class="icon icon-heart ">
+													<use xlink:href="img/svg/sprite.svg#heart"></use>
+												</svg>
+											</div>
+											<div class="s-recomend__icon-btn btn">
+												<svg class="icon icon-compare ">
+													<use xlink:href="img/svg/sprite.svg#compare"></use>
+												</svg>
+											</div>
 										</div>
-										<div class="s-recomend__icon-btn btn">
-											<svg class="icon icon-compare ">
-												<use xlink:href="img/svg/sprite.svg#compare"></use>
-											</svg>
+										<div class="s-recomend__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/new1.jpg" alt=""/>
 										</div>
-									</div>
-									<div class="s-recomend__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/new1.jpg" alt=""/>
-									</div><a class="s-recomend__item-title" href="#">Приталенное подростковое платье MEVIS 3137-02</a>
-									<div class="s-recomend__item-order">
-										<div class="s-recomend__item-price">420 грн.
+										<div class="s-recomend__item-title">Приталенное подростковое платье MEVIS 3137-02
 										</div>
-										<div class="s-recomend__item-btn btn btn-primary">в корзину
-										</div>
-									</div>
+										<div class="s-recomend__item-order">
+											<div class="s-recomend__item-price">420 грн.
+											</div>
+											<div class="s-recomend__item-btn btn btn-primary">в корзину
+											</div>
+										</div></a>
 								</div>
 							</div>
 							<div class="slick-slide">
-								<div class="s-recomend__item">
-									<div class="s-recomend__icon-wrap">
-										<div class="s-recomend__icon-btn btn">
-											<svg class="icon icon-heart ">
-												<use xlink:href="img/svg/sprite.svg#heart"></use>
-											</svg>
+								<div class="s-recomend__item"><a href="">
+										<div class="s-recomend__icon-wrap">
+											<div class="s-recomend__icon-btn btn">
+												<svg class="icon icon-heart ">
+													<use xlink:href="img/svg/sprite.svg#heart"></use>
+												</svg>
+											</div>
+											<div class="s-recomend__icon-btn btn">
+												<svg class="icon icon-compare ">
+													<use xlink:href="img/svg/sprite.svg#compare"></use>
+												</svg>
+											</div>
 										</div>
-										<div class="s-recomend__icon-btn btn">
-											<svg class="icon icon-compare ">
-												<use xlink:href="img/svg/sprite.svg#compare"></use>
-											</svg>
+										<div class="s-recomend__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/new1.jpg" alt=""/>
 										</div>
-									</div>
-									<div class="s-recomend__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/new1.jpg" alt=""/>
-									</div><a class="s-recomend__item-title" href="#">Приталенное подростковое платье MEVIS 3137-02</a>
-									<div class="s-recomend__item-order">
-										<div class="s-recomend__item-price">420 грн.
+										<div class="s-recomend__item-title">Приталенное подростковое платье MEVIS 3137-02
 										</div>
-										<div class="s-recomend__item-btn btn btn-primary">в корзину
-										</div>
-									</div>
+										<div class="s-recomend__item-order">
+											<div class="s-recomend__item-price">420 грн.
+											</div>
+											<div class="s-recomend__item-btn btn btn-primary">в корзину
+											</div>
+										</div></a>
 								</div>
 							</div>
 							<div class="slick-slide">
-								<div class="s-recomend__item">
-									<div class="s-recomend__icon-wrap">
-										<div class="s-recomend__icon-btn btn">
-											<svg class="icon icon-heart ">
-												<use xlink:href="img/svg/sprite.svg#heart"></use>
-											</svg>
+								<div class="s-recomend__item"><a href="">
+										<div class="s-recomend__icon-wrap">
+											<div class="s-recomend__icon-btn btn">
+												<svg class="icon icon-heart ">
+													<use xlink:href="img/svg/sprite.svg#heart"></use>
+												</svg>
+											</div>
+											<div class="s-recomend__icon-btn btn">
+												<svg class="icon icon-compare ">
+													<use xlink:href="img/svg/sprite.svg#compare"></use>
+												</svg>
+											</div>
 										</div>
-										<div class="s-recomend__icon-btn btn">
-											<svg class="icon icon-compare ">
-												<use xlink:href="img/svg/sprite.svg#compare"></use>
-											</svg>
+										<div class="s-recomend__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/new1.jpg" alt=""/>
 										</div>
-									</div>
-									<div class="s-recomend__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/new1.jpg" alt=""/>
-									</div><a class="s-recomend__item-title" href="#">Приталенное подростковое платье MEVIS 3137-02</a>
-									<div class="s-recomend__item-order">
-										<div class="s-recomend__item-price">420 грн.
+										<div class="s-recomend__item-title">Приталенное подростковое платье MEVIS 3137-02
 										</div>
-										<div class="s-recomend__item-btn btn btn-primary">в корзину
-										</div>
-									</div>
+										<div class="s-recomend__item-order">
+											<div class="s-recomend__item-price">420 грн.
+											</div>
+											<div class="s-recomend__item-btn btn btn-primary">в корзину
+											</div>
+										</div></a>
 								</div>
 							</div>
 							<div class="slick-slide">
-								<div class="s-recomend__item">
-									<div class="s-recomend__icon-wrap">
-										<div class="s-recomend__icon-btn btn">
-											<svg class="icon icon-heart ">
-												<use xlink:href="img/svg/sprite.svg#heart"></use>
-											</svg>
+								<div class="s-recomend__item"><a href="">
+										<div class="s-recomend__icon-wrap">
+											<div class="s-recomend__icon-btn btn">
+												<svg class="icon icon-heart ">
+													<use xlink:href="img/svg/sprite.svg#heart"></use>
+												</svg>
+											</div>
+											<div class="s-recomend__icon-btn btn">
+												<svg class="icon icon-compare ">
+													<use xlink:href="img/svg/sprite.svg#compare"></use>
+												</svg>
+											</div>
 										</div>
-										<div class="s-recomend__icon-btn btn">
-											<svg class="icon icon-compare ">
-												<use xlink:href="img/svg/sprite.svg#compare"></use>
-											</svg>
+										<div class="s-recomend__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/new1.jpg" alt=""/>
 										</div>
-									</div>
-									<div class="s-recomend__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/new1.jpg" alt=""/>
-									</div><a class="s-recomend__item-title" href="#">Приталенное подростковое платье MEVIS 3137-02</a>
-									<div class="s-recomend__item-order">
-										<div class="s-recomend__item-price">420 грн.
+										<div class="s-recomend__item-title">Приталенное подростковое платье MEVIS 3137-02
 										</div>
-										<div class="s-recomend__item-btn btn btn-primary">в корзину
-										</div>
-									</div>
+										<div class="s-recomend__item-order">
+											<div class="s-recomend__item-price">420 грн.
+											</div>
+											<div class="s-recomend__item-btn btn btn-primary">в корзину
+											</div>
+										</div></a>
 								</div>
 							</div>
 							<div class="slick-slide">
-								<div class="s-recomend__item">
-									<div class="s-recomend__icon-wrap">
-										<div class="s-recomend__icon-btn btn">
-											<svg class="icon icon-heart ">
-												<use xlink:href="img/svg/sprite.svg#heart"></use>
-											</svg>
+								<div class="s-recomend__item"><a href="">
+										<div class="s-recomend__icon-wrap">
+											<div class="s-recomend__icon-btn btn">
+												<svg class="icon icon-heart ">
+													<use xlink:href="img/svg/sprite.svg#heart"></use>
+												</svg>
+											</div>
+											<div class="s-recomend__icon-btn btn">
+												<svg class="icon icon-compare ">
+													<use xlink:href="img/svg/sprite.svg#compare"></use>
+												</svg>
+											</div>
 										</div>
-										<div class="s-recomend__icon-btn btn">
-											<svg class="icon icon-compare ">
-												<use xlink:href="img/svg/sprite.svg#compare"></use>
-											</svg>
+										<div class="s-recomend__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/new1.jpg" alt=""/>
 										</div>
-									</div>
-									<div class="s-recomend__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/new1.jpg" alt=""/>
-									</div><a class="s-recomend__item-title" href="#">Приталенное подростковое платье MEVIS 3137-02</a>
-									<div class="s-recomend__item-order">
-										<div class="s-recomend__item-price">420 грн.
+										<div class="s-recomend__item-title">Приталенное подростковое платье MEVIS 3137-02
 										</div>
-										<div class="s-recomend__item-btn btn btn-primary">в корзину
-										</div>
-									</div>
+										<div class="s-recomend__item-order">
+											<div class="s-recomend__item-price">420 грн.
+											</div>
+											<div class="s-recomend__item-btn btn btn-primary">в корзину
+											</div>
+										</div></a>
 								</div>
 							</div>
 							<div class="slick-slide">
-								<div class="s-recomend__item">
-									<div class="s-recomend__icon-wrap">
-										<div class="s-recomend__icon-btn btn">
-											<svg class="icon icon-heart ">
-												<use xlink:href="img/svg/sprite.svg#heart"></use>
-											</svg>
+								<div class="s-recomend__item"><a href="">
+										<div class="s-recomend__icon-wrap">
+											<div class="s-recomend__icon-btn btn">
+												<svg class="icon icon-heart ">
+													<use xlink:href="img/svg/sprite.svg#heart"></use>
+												</svg>
+											</div>
+											<div class="s-recomend__icon-btn btn">
+												<svg class="icon icon-compare ">
+													<use xlink:href="img/svg/sprite.svg#compare"></use>
+												</svg>
+											</div>
 										</div>
-										<div class="s-recomend__icon-btn btn">
-											<svg class="icon icon-compare ">
-												<use xlink:href="img/svg/sprite.svg#compare"></use>
-											</svg>
+										<div class="s-recomend__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/new1.jpg" alt=""/>
 										</div>
-									</div>
-									<div class="s-recomend__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/new1.jpg" alt=""/>
-									</div><a class="s-recomend__item-title" href="#">Приталенное подростковое платье MEVIS 3137-02</a>
-									<div class="s-recomend__item-order">
-										<div class="s-recomend__item-price">420 грн.
+										<div class="s-recomend__item-title">Приталенное подростковое платье MEVIS 3137-02
 										</div>
-										<div class="s-recomend__item-btn btn btn-primary">в корзину
-										</div>
-									</div>
+										<div class="s-recomend__item-order">
+											<div class="s-recomend__item-price">420 грн.
+											</div>
+											<div class="s-recomend__item-btn btn btn-primary">в корзину
+											</div>
+										</div></a>
 								</div>
 							</div>
 						</div>
@@ -1201,59 +1237,20 @@
 				</div>
 			</section>
 			<!-- end s-recomend-->
-			<!-- start s-advantages-->
-			<section class="s-advantages section" id="s-advantages">
-				<div class="container">
-					<h2>почему вам стоит выбрать именно нас</h2>
-					<div class="s-advantages__row row">
-						<div class="s-advantages__col col-xl-3 col-sm-6">
-							<div class="s-advantages__item">
-								<div class="s-advantages__img-wrap"><img class="res-i" src="img/@2x/adv-i1.png" alt=""/>
-								</div>
-								<div class="s-advantages__item-title">Бесплатная доставка
-								</div>
-								<div class="s-advantages__item-subtitle">При заказе от 1000 грн.
-								</div>
-							</div>
-						</div>
-						<div class="s-advantages__col col-xl-3 col-sm-6">
-							<div class="s-advantages__item">
-								<div class="s-advantages__img-wrap"><img class="res-i" src="img/@2x/adv-i2.png" alt=""/>
-								</div>
-								<div class="s-advantages__item-title">Защита покупателя
-								</div>
-								<div class="s-advantages__item-subtitle">Возврат в течение 11 дней
-								</div>
-							</div>
-						</div>
-						<div class="s-advantages__col col-xl-3 col-sm-6">
-							<div class="s-advantages__item">
-								<div class="s-advantages__img-wrap"><img class="res-i" src="img/@2x/adv-i3.png" alt=""/>
-								</div>
-								<div class="s-advantages__item-title">Поддержка клиентов
-								</div>
-								<div class="s-advantages__item-subtitle">+38 (050) 301-44-68
-								</div>
-							</div>
-						</div>
-						<div class="s-advantages__col col-xl-3 col-sm-6">
-							<div class="s-advantages__item">
-								<div class="s-advantages__img-wrap"><img class="res-i" src="img/@2x/adv-i4.png" alt=""/>
-								</div>
-								<div class="s-advantages__item-title">Принимаем заказы
-								</div>
-								<div class="s-advantages__item-subtitle">Принимаем заказы 24/7
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- end s-advantages-->
 			<!-- start s-main-about-->
 			<section class="s-main-about section" id="s-main-about">
 				<div class="container">
 					<h2>О нас</h2>
+					<div class="s-main-about__img-block">
+						<div class="s-main-about__img-item"><img class="res-i" src="img/@2x/sert1.jpg" alt=""/>
+						</div>
+						<div class="s-main-about__img-item"><img class="res-i" src="img/@2x/sert2.jpg" alt=""/>
+						</div>
+						<div class="s-main-about__img-item"><img class="res-i" src="img/@2x/sert3.jpg" alt=""/>
+						</div>
+						<div class="s-main-about__img-item"><img class="res-i" src="img/@2x/sert4.jpg" alt=""/>
+						</div>
+					</div>
 					<h3>Детская и подростковая обувь и одежда — магазин «Мир детства» Харьков.</h3>
 					<p>Сайт mirdetstva.net создан для удобства покупателей магазина «Мир детства», который находится в Харькове в универмаге «Детский мир» на площади Конституции, 9, а также для тех, кто живет за пределами Харькова и не может совершать покупки в нашем offline магазине. Для наших покупателей это огромное преимущество – можно подобрать заранее, заказать, ознакомится с новинками или купить детскую одежду и обувь для ребенка в удобное время.</p>
 					<p>Мы работаем с детской одеждой и обувью с 2010 года и поможем Вам правильно подобрать обувь для детей и подростков, расскажем — на какие характеристики в первую очередь обратить внимание при выборе. В магазине «Мир детства» представлены только качественные товары известных украинских и зарубежных производителей.<br>Детская обувь должна быть удобна и комфортна для ребенка.</p>
@@ -1272,8 +1269,38 @@
 			<footer class="footer block-with-lazy">
 				<div class="container">
 					<div class="footer__row row">
-						<div class="footer__col col-xl"><a class="footer__title-block" href="/"><span class="footer__logo-wrap"><img class="res-i" src="img/@2x/logo.png" alt=""/></span><span class="footer__text-wrap"><span class="footer__title"><span>М</span>ир детства</span><span class="footer__subtitle">одежда и обувь для<br>детей и подростков</span></span></a>
-							<div class="footer__descr">Интернет-магазин товаров для детей.
+						<div class="footer__col col-lg-3 col-sm-6">
+							<div class="footer__col-title">Покупателю
+							</div>
+							<ul>
+								<li><a href="#">Вход в кабинет</a></li>
+								<li><a href="#">Контакты</a></li>
+								<li><a href="#">Доставка и оплата</a></li>
+								<li><a href="#">Публичная оферта</a></li>
+								<li><a href="#">Таблица размеров</a></li>
+								<li><a href="#">Описание тканей</a></li>
+							</ul>
+						</div>
+						<div class="footer__col col-lg-3 col-sm-6">
+							<div class="footer__col-title">Категории
+							</div>
+							<ul>
+								<li><a href="#">Детская обувь</a></li>
+								<li><a href="#">Детская одежда</a></li>
+								<li><a href="#">Школьная форма</a></li>
+								<li><a href="#">Одежда для новорожденных</a></li>
+								<li><a href="#">Детские коляски</a></li>
+								<li><a href="#">Стульчики для кормления</a></li>
+							</ul>
+						</div>
+						<div class="footer__col col-lg-3 col-sm-6">
+							<div class="footer__col-title">Вакансии
+							</div>
+							<ul>
+								<li><a href="#">Маркетолог</a></li>
+								<li><a href="#">Продавец-консультант</a></li>
+							</ul>
+							<div class="footer__col-title">мы в соц сетях
 							</div>
 							<div class="soc"><a class="soc__item d-lg-none" href="№" target="_blank">
 								<svg class="icon icon-phone ">
@@ -1282,41 +1309,25 @@
 								<svg class="icon icon-insta ">
 									<use xlink:href="img/svg/sprite.svg#insta"></use>
 								</svg></a><a class="soc__item" href="№" target="_blank">
-								<svg class="icon icon-vk ">
-									<use xlink:href="img/svg/sprite.svg#vk"></use>
+								<svg class="icon icon-viber ">
+									<use xlink:href="img/svg/sprite.svg#viber"></use>
 								</svg></a>
 							</div>
 						</div>
-						<div class="footer__col col-xl-2 col-md-4">
-							<div class="footer__col-title">Информация
+						<div class="footer__col col-lg-3 col-sm-6">
+							<div class="footer__col-title">Мир детства
 							</div>
 							<ul>
-								<li><a href="#">О магазине</a></li>
-								<li><a href="#">Оплата - Доставка</a></li>
-								<li><a href="#">Политика безопасности</a></li>
-								<li><a href="#">Условия соглашения</a></li>
-							</ul>
-						</div>
-						<div class="footer__col col-xl-2 col-md-4">
-							<div class="footer__col-title">Служба поддержки
-							</div>
-							<ul>
-								<li><a href="#">Связаться с нами</a></li>
-								<li><a href="#">Возврат товара</a></li>
-								<li><a href="#">Карта сайта</a></li>
-							</ul>
-						</div>
-						<div class="footer__col col-xl-2 col-md-4">
-							<div class="footer__col-title">Личный кабинет
-							</div>
-							<ul>
-								<li><a href="#">Личный кабинет</a></li>
-								<li><a href="#">История заказов</a></li>
-								<li><a href="#">Мои закладки</a></li>
-								<li><a href="#">Рассылка новостей</a></li>
+								<li>© 2017-2019 Мир Детства</li>
+								<li><a href="tel:+380503014468">+38 (050) 301-44-68</a></li>
+								<li><a href="tel:+380978335676">+38 (097) 833-56-76</a></li>
+								<li><a href="mailto:eshop@mirdetstva.net">eshop@mirdetstva.net</a></li>
+								<li><a href="#">Посетите наш магазин</a></li>
 							</ul>
 						</div>
 					</div>
+					<!-- предыдущее меню-->
+					<!-- конец предыдущего меню-->
 				</div>
 			</footer>
 		</div>
