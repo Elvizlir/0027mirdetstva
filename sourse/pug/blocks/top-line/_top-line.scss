@@ -2,7 +2,7 @@
   // @include media-breakpoint-down(md){
 	// 	display: none;
 	// }
-  background-color: #2723dd;
+  background-color: $info;
   color: #fff;
   padding-top: rem(4);
   @include media-breakpoint-up(lg){
@@ -128,7 +128,7 @@
 
   &__adress{
     margin-bottom: rem(5);
-    font-size: rem(13);
+    font-size: rem(16);
     line-height: 1;
   }
 

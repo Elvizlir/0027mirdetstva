@@ -5,7 +5,7 @@ include ../blocks/s-content/_s-content.pug
 include ../blocks/s-contact/_s-contact.pug
 include ../blocks/s-main-slider/_s-main-slider.pug
 include ../blocks/s-categories/_s-categories.pug
-include ../blocks/s-new/_s-new.pug
+include ../blocks/s-catalog-slider/_s-catalog-slider.pug
 include ../blocks/s-recomend/_s-recomend.pug
 include ../blocks/s-advantages/_s-advantages.pug
 include ../blocks/s-main-about/_s-main-about.pug
@@ -13,7 +13,7 @@ include ../blocks/s-main-about/_s-main-about.pug
 block variables
 	- let  mainPage= 'main-page'
 block title
-	- let  title= 'Главная'
+	- let  title= 'Детская и подростковая обувь и одежда купить - МИР ДЕТСТВА Харьков'
 	title= title
 block pagecontent 
 	+mob-mnu()
@@ -23,8 +23,10 @@ block pagecontent
 	//- +header-block()
 	+s-main-slider()(class='top-section')
 	+s-categories()
-	+s-new()
-	+s-recomend()
+	+s-catalog-slider('Новинки')
+	+s-catalog-slider('Мы рекомендуем')
+	+s-catalog-slider('Распродажа')
+	//- +s-recomend()
 	//- +s-advantages()
 	+s-main-about()
 	+footer()

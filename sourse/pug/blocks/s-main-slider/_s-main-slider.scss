@@ -96,30 +96,28 @@
 		}
 	}
 
-	&__slider-dots{
+	.slick-dots{
 		@include a-cent(x);
 		bottom: rem(10);
 		button{
 			display: none;
 		}
-		ul{
 			margin: 0;
 			list-style: none;
 			display: flex;
 			align-items: center;
 			justify-content: center;
-		}
 		li{
 			width: rem(6);
 			height: rem(6);
 			border-radius: 50%;
+			transform-origin: center center;
 			@include mt;
 			cursor: pointer;
 			background-color: #fff;
-			margin: 0 rem(5);
+			margin: 0 rem(6);
 			&.slick-active{
-				width: rem(12);
-				height: rem(12);
+				transform: scale(2.0);
 			}
 		}
 	}

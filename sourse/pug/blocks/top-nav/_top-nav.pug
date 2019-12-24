@@ -30,9 +30,9 @@ mixin top-nav()
 						+mnu()
 				+e.form-col.col-sm.order-sm-0.order-last
 					+form-wrap
-						+e.btn.btn(type="submit")
-							+icon('search')
 						+input('Поиск товара по каталогу')(autocomplete='off')
+							+e.btn.btn(type="submit")
+								+icon('search')
 						+e.input-close--js.d-sm-none
 							+icon('close')
 				+e.phone-col.col-auto

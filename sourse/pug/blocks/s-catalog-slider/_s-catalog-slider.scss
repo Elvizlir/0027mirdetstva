@@ -1,7 +1,7 @@
 
 // start .s-new
-.s-new {
-	padding: rem(10) 0 rem(30);
+.s-catalog-slider{
+	padding: rem(10) 0 rem(50);
 
 	&__slider-wrap{
 		position: relative;
@@ -46,32 +46,50 @@
 		}
 
 		.slick-slide{
+			height: inherit;
 			padding-left: rem(10);
 			padding-right: rem(10);
+		}
+
+		.slick-track{
+			display: flex;
+			&::before,
+			&::after{
+				display: none;
+			}
 		}
 	}
 
 	&__item{
+		height: 100%;
+		padding-bottom: rem(15);
+		display: flex;
+		flex-direction: column;
+		background-color: #fff;
 		position: relative;
 		border: 1px solid #c4c4c4;
 		@include mt;
+		&:hover{
+			text-decoration: none;
+			box-shadow: 0px 9px 20px 2px rgba(120, 120, 120, 0.23);
+		}
 		& > a{
+			flex-grow: 1;
 			display: block;
-			@include mt;
-			padding: rem(20) rem(15);
-			background-color: #ffffff;
 			&:hover{
 				text-decoration: none;
 			}
 		}
-		&:hover{
-			box-shadow: 0px 9px 20px 2px rgba(120, 120, 120, 0.23);
-		}
 	}
-
+	
 	&__img-wrap{
 		@include block(230,350);
 		margin-bottom: rem(5);
+	}
+	
+	&__item-descr{
+		padding: rem(10) rem(15) 0;
+		display: block;
 	}
 
 	&__item-title{
@@ -85,10 +103,12 @@
 	}
 
 	&__item-order{
+		margin-top: auto;
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 		align-items: center;
 		flex-wrap: nowrap;
+		margin-bottom: rem(5);
 	}
 
 	&__item-price{
@@ -97,46 +117,46 @@
 		@include media-breakpoint-up(xl){
 			font-size: rem(20);
 		}
+		&--light{
+			color: #c4c4c4;
+			text-decoration: line-through;
+		}
 	}
 
 	&__item-btn{
-		color: #fff;
+		margin: 0 auto;
+		display: block;
 		text-align: center;
-		font-size: rem(14);
+		font-size: rem(16);
 		border-radius: rem(13);
 		line-height: 1;
 		text-transform: uppercase;
-		width: rem(114);
-		&:hover{
-			color: #fff;
-		}
+		min-width: rem(130);
 	}
 
-	&__slider-dots{
+	.slick-dots{
 		bottom: rem(-5);
 		@include a-cent(x);
-		z-index: 3;
+		// z-index: 3;
 		button{
 			display: none;
 		}
-		ul{
-			margin: 0;
-			list-style: none;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
+		margin: 0;
+		list-style: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		li{
-			margin: 0 rem(5);
+			margin: 0 rem(8);
 			width: rem(8);
 			height: rem(8);
 			cursor: pointer;
+			transform-origin: center center;
 			border-radius: 50%;
 			@include mt;
 			background-color: $primary;
 			&.slick-active{
-				width: rem(20);
-				height: rem(20);
+				transform: scale(2.5);
 			}
 		}
 	}
