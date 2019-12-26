@@ -28,7 +28,11 @@ mixin top-line()
 								+icon('phone')
 								+e.number-wrap
 									+e.number +38 (050) 301-44-68
-									+e.number-text Обратный звонок
+									+e.number-logo-block
+										+e.number-logo-wrap
+											+e.IMG.number-logo(src='img/@2x/mts__logo.png' alt='')
+										+e.number-logo-wrap
+											+e.IMG.number-logo(src='img/@2x/star__logo.png' alt='')
 						.col-auto
 							+e.lang
 								a.active(href='#') Ru

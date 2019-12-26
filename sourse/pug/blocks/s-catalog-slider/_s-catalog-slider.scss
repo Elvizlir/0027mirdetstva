@@ -124,6 +124,7 @@
 	}
 
 	&__item-btn{
+		color: #fff;
 		margin: 0 auto;
 		display: block;
 		text-align: center;
@@ -132,6 +133,9 @@
 		line-height: 1;
 		text-transform: uppercase;
 		min-width: rem(130);
+		&:hover{
+			color: #fff;
+		}
 	}
 
 	.slick-dots{

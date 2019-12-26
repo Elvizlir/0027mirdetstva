@@ -8340,6 +8340,7 @@ a {
 }
 
 .s-catalog-slider__item-btn {
+  color: #fff;
   margin: 0 auto;
   display: block;
   text-align: center;
@@ -8348,6 +8349,10 @@ a {
   line-height: 1;
   text-transform: uppercase;
   min-width: 8.125rem;
+}
+
+.s-catalog-slider__item-btn:hover {
+  color: #fff;
 }
 
 .s-catalog-slider .slick-dots {
@@ -9063,7 +9068,6 @@ a {
   display: block;
   font-size: 0.875rem;
   line-height: 1;
-  margin-bottom: 0.25rem;
 }
 
 .top-line__number-text {
@@ -9108,6 +9112,22 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.top-line__number-logo {
+  width: auto;
+  height: 1.25rem;
+}
+
+.top-line__number-logo-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .toggle-menu-mobile {
@@ -9657,14 +9677,22 @@ a {
   display: block;
   font-size: 0.875rem;
   line-height: 1;
-  margin-bottom: 0.25rem;
 }
 
-.top-nav__number-text {
-  display: block;
-  color: #d1d1d1;
-  font-size: 0.875rem;
-  line-height: 1;
+.top-nav__number-logo {
+  width: auto;
+  height: 1.25rem;
+}
+
+.top-nav__number-logo-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 /*==========  Mobile First  ==========*/

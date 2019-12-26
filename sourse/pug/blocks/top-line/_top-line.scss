@@ -97,7 +97,6 @@
 		display: block;
 		font-size: rem(14);
 		line-height: 1;
-		margin-bottom: rem(4);
 	}
 
 	&__number-text{
@@ -138,6 +137,17 @@
     max-width: rem(150);
     display: flex;
     justify-content: space-between;
+  }
+
+  &__number-logo{
+    width: auto;
+    height: rem(20);
+  }
+
+  &__number-logo-block{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 
 
