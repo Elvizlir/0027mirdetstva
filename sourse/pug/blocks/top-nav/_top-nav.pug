@@ -38,13 +38,10 @@ mixin top-nav()
 				+e.phone-col.col-auto
 					+e.A.phone-block(href='tel:+380503014468')
 						+icon('phone')
+						+e.number-logo-block
+							+e.IMG.number-logo(src='img/@2x/mts__logo.png' alt='')
 						+e.number-block
 							+e.number +38 (050) 301-44-68
-							+e.number-logo-block
-								+e.number-logo-wrap
-									+e.IMG.number-logo(src='img/@2x/mts__logo.png' alt='')
-								+e.number-logo-wrap
-									+e.IMG.number-logo(src='img/@2x/star__logo.png' alt='')
 				.col-auto
 					+e.A.icon-item(href='#')
 						+icon('heart')

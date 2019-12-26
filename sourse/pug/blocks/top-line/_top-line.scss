@@ -78,10 +78,10 @@
 
   &__phone-block{
 		color: #ffffff;
-		margin-left: rem(12);
 		display: flex;
-		align-items: center;
-		text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: rem(5);
 		&:hover{
 			text-decoration: none;
 			color: #ffffff;
@@ -145,9 +145,7 @@
   }
 
   &__number-logo-block{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    margin-right: rem(10);
   }
 
 

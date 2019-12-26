@@ -9043,14 +9043,16 @@ a {
 
 .top-line__phone-block {
   color: #ffffff;
-  margin-left: 0.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0.3125rem;
 }
 
 .top-line__phone-block:hover {
@@ -9120,14 +9122,7 @@ a {
 }
 
 .top-line__number-logo-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  margin-right: 0.625rem;
 }
 
 .toggle-menu-mobile {
@@ -9649,7 +9644,6 @@ a {
 
 .top-nav__phone-block {
   color: #ffffff;
-  margin-left: 0.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9685,14 +9679,7 @@ a {
 }
 
 .top-nav__number-logo-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  margin-right: 0.625rem;
 }
 
 /*==========  Mobile First  ==========*/
@@ -13219,6 +13206,7 @@ a {
 
   .top-nav__phone-block .icon {
     margin-right: 0.75rem;
+    display: none;
   }
 }
 
@@ -14490,6 +14478,10 @@ a {
   }
 
   .top-nav__number-block {
+    display: none;
+  }
+
+  .top-nav__number-logo-block {
     display: none;
   }
 
