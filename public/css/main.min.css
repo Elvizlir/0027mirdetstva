@@ -9072,13 +9072,6 @@ a {
   line-height: 1;
 }
 
-.top-line__number-text {
-  display: block;
-  color: #d1d1d1;
-  font-size: 0.875rem;
-  line-height: 1;
-}
-
 .top-line__lang {
   font-size: 1rem;
 }
@@ -9122,6 +9115,12 @@ a {
 }
 
 .top-line__number-logo-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 0.625rem;
 }
 
@@ -9679,6 +9678,12 @@ a {
 }
 
 .top-nav__number-logo-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 0.625rem;
 }
 

@@ -99,12 +99,12 @@
 		line-height: 1;
 	}
 
-	&__number-text{
-		display: block;
-		color: #d1d1d1;
-		font-size: rem(14);
-		line-height: 1;
-  }
+	// &__number-text{
+	// 	display: block;
+	// 	color: #d1d1d1;
+	// 	font-size: rem(14);
+	// 	line-height: 1;
+  // }
   
   &__lang{
     a{
@@ -145,6 +145,8 @@
   }
 
   &__number-logo-block{
+    display: flex;
+		align-items: center;
     margin-right: rem(10);
   }
 

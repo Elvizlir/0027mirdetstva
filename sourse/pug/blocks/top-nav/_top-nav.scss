@@ -350,6 +350,8 @@
 		@include media-breakpoint-down(md){
 			display: none;
 		}
+		display: flex;
+		align-items: center;
 		margin-right: rem(10);
   }
 
