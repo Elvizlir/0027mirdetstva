@@ -136,6 +136,14 @@
 		font-size: rem(26);
 		color: $info;
 		font-weight: 700;
+		span{
+			display: block;
+			line-height: 1;
+			&.disabled{
+				color: #ccc;
+				text-decoration: line-through;
+			}
+		}
 	}
 
 	&__size-title{

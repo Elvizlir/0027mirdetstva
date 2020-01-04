@@ -29,7 +29,9 @@ mixin s-product()
 						+e.title=title
 						+stars()
 						+e.price-block
-							+e.price 450 грн.
+							+e.price
+								span.disabled 600 грн.
+								span 450 грн.
 							+e.art Арт.: 123123123
 						+e.size-title Выберите размер
 						+e.size-block

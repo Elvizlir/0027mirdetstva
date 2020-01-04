@@ -8937,6 +8937,16 @@ a {
   font-weight: 700;
 }
 
+.s-product__price span {
+  display: block;
+  line-height: 1;
+}
+
+.s-product__price span.disabled {
+  color: #ccc;
+  text-decoration: line-through;
+}
+
 .s-product__size-title {
   font-size: 1.25rem;
   font-weight: 700;
