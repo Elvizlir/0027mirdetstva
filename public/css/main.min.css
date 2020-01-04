@@ -9101,10 +9101,11 @@ a {
 }
 
 .s-product .soc__item {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
   border-color: #3632ec;
+}
+
+.s-product .soc__item:first-child {
+  display: none !important;
 }
 
 .s-product .soc .icon {

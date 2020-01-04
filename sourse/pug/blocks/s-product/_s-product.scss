@@ -273,7 +273,9 @@
 	.soc{
 		justify-content: center;
 		&__item{
-			display: flex !important;
+			&:first-child{
+				display: none !important;
+			}
 			border-color: $info;
 		}
 		.icon{
