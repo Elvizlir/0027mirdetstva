@@ -8779,6 +8779,7 @@ a {
 .s-product__main-block {
   border: 1px solid #ccc;
   padding: 0.625rem;
+  background-color: #fff;
 }
 
 .s-product__main-row {
@@ -8953,7 +8954,7 @@ a {
 }
 
 .s-product__size-block label {
-  margin-bottom: 0;
+  margin: 0.3125rem;
 }
 
 .s-product__size-block span {
@@ -8961,7 +8962,6 @@ a {
   -o-transition: all 0.36s;
   transition: all 0.36s;
   cursor: pointer;
-  margin: 0.3125rem;
   border-radius: 0.3125rem;
   background-color: #ccc;
   color: #fff;
