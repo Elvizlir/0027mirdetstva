@@ -5,6 +5,7 @@
 	padding-bottom: rem(10);
 
 	&__main-block{
+		margin-bottom: rem(10);
 		border: 1px solid #ccc;
 		padding: rem(10);
 		background-color: #fff;
@@ -277,6 +278,59 @@
 		}
 		.icon{
 			color: $info;
+		}
+	}
+
+	&__tabs-block{
+	}
+	
+	.tabs{
+		
+		&__caption{
+			display: flex;
+			@include media-breakpoint-down(sm){
+				flex-wrap: wrap;
+			}
+		}
+		&__btn{
+			flex: 0 0 100%;
+			max-width: 100%;
+			@include media-breakpoint-up(md){
+				flex: 0 0 33.334%;
+				max-width: 33.334%;
+				border-radius: rem(13) rem(13) 0 0;
+			}
+			border: 1px solid #ccc;
+			background-color: #fff;
+			display: flex;
+			font-weight: 700;
+			align-items: center;
+			justify-content: center;
+			padding: rem(10) rem(5);
+			font-size: rem(16);
+			text-transform: uppercase;
+			text-align: center;
+			@include mt;
+			&:hover,
+			&.active{
+				background-color: $info;
+				color: #fff;
+			}
+			&:not(:first-child){
+				@include media-breakpoint-down(sm){
+					margin-top: rem(-1);
+				}
+			}
+		}
+		
+		&__wrap{
+			margin-top: rem(-1);
+			border: 1px solid #ccc;
+			background-color: #fff;
+			padding: rem(10) rem(15);
+		}
+		&__content{
+			// @include mt;
 		}
 	}
 	
