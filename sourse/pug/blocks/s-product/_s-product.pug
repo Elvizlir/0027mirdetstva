@@ -1,0 +1,85 @@
+mixin s-product()
+	// start s-product
+	+b.SECTION.s-product.section#s-product&attributes(attributes)
+		.container
+			+e.main-block
+				+e.main-row.row
+					+e.slider-col.col-xl-4.col-md-5.col-sm-8
+						+e.big-slider--js
+							mixin bg-prod-slide()
+								.slider-slide
+									+e.slider-img-wrap--bg
+										img(src='img/@2x/product-img.jpg' alt='')
+							+bg-prod-slide()
+							+bg-prod-slide()
+							+bg-prod-slide()
+							+bg-prod-slide()
+							+bg-prod-slide()
+						+e.small-slider--js
+							mixin sm-prod-slide
+								.slider-slide
+									+e.slider-img-wrap--sm
+										img(src='img/@2x/product-img.jpg' alt='')
+							+sm-prod-slide()
+							+sm-prod-slide()
+							+sm-prod-slide()
+							+sm-prod-slide()
+							+sm-prod-slide()
+					+e.main-col.col-xl-5.col-md-7
+						+e.title Платье с интересным названием для примера
+						+stars()
+						+e.price-block
+							+e.price 450 грн.
+							+e.art Арт.: 123123123
+						+e.size-title Выберите размер
+						+e.size-block
+							label
+								input(type='radio' name='size')
+								span 31
+							label
+								input(type='radio' name='size')
+								span 32
+							label
+								input(type='radio' name='size')
+								span 33
+							label
+								input(type='radio' name='size')
+								span 34
+							label
+								input(type='radio' name='size')
+								span 35
+							label
+								input(type='radio' name='size')
+								span 36
+						+e.A.size-link(href='#') Таблица размеров
+						+e.status В наличии
+						+e.self доступен самовывоз
+						+e.alert #Внимание! Цена действительна только при заказе на сайте!<br>В розничном магазине цена может отличаться!
+
+						+e.btn-wrap
+							+e.btn.btn.btn-info(type="button") Быстрый заказ
+							+e.btn.btn.btn-primary(type="button") Купить
+
+						+e.icons-block
+							+e.icon-btn.btn
+								+icon('heart')
+							+e.icon-btn.btn
+								+icon('compare')
+
+						+e.share Поделиться
+						+soc()
+
+					+e.add-col.col-xl-3
+						+e.add-info-block
+							+e.add-title Доставка**
+							+e.add-text в отделение Новой почты курьером на дом самовывоз из магазина
+						+e.add-info-block
+							+e.add-title Оплата**
+							+e.add-text На карту ПриватБанка При получении на Новой почте При получении в магазине
+						+e.add-info-block
+							+e.add-title Гарантия**
+							+e.add-text Возврат, Обмен Согласно Закона…
+						+e.add-link **С условиями доставки и оплаты Вы можете ознакомиться по 
+							a(href='#' target='_blank') ссылке
+
+	// end s-product

@@ -138,10 +138,10 @@ function eventHandler() {
 		var topN = $(".top-nav").innerHeight();
 		$(window).scroll(function () {
 			if ($(window).scrollTop() > topL) {
-				// $('.top-section').css('margin-top',topN);
+				$('.top-section').css('margin-top', topN);
 				$('.top-nav  ').addClass('fixed');
 			} else {
-				// $('.top-section').css('margin-top','0');
+				$('.top-section').css('margin-top', '0');
 				$('.top-nav  ').removeClass('fixed');
 			}
 		}); // конец добавил
@@ -194,6 +194,21 @@ function eventHandler() {
 		slidesToScroll: 1
 	};
 	$('.s-main-slider__slider--js').slick(_objectSpread({}, defaultSlide));
+	$('.s-product__big-slider--js').slick(_objectSpread({}, defaultSlide, {
+		dots: false,
+		arrows: false,
+		fade: true,
+		infinite: false,
+		asNavFor: '.s-product__small-slider--js'
+	}));
+	$('.s-product__small-slider--js').slick(_objectSpread({}, defaultSlide, {
+		slidesToShow: 4,
+		dots: false,
+		loop: false,
+		draggable: false,
+		asNavFor: '.s-product__big-slider--js',
+		focusOnSelect: true
+	}));
 	$('.s-catalog-slider__slider--js').slick(_objectSpread({}, defaultSlide, {
 		responsive: [{
 			breakpoint: 990,
