@@ -90,9 +90,130 @@ mixin s-product()
 						.tabs__btn.btn Характеристики
 						.tabs__btn.btn Отзывы
 					.tabs__wrap
-						.tabs__content.active Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, rem quis eius at sunt ducimus esse, atque illo quaerat quo temporibus a soluta tempora. Iste sequi error distinctio eveniet cumque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga sint atque hic dolorum. Voluptatibus minus sint, praesentium numquam nemo sed. Porro ab debitis veritatis quisquam voluptas iste laudantium dolore ea? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae laboriosam earum dolore aspernatur quia, a ab ducimus velit culpa non? Officiis odit cum veritatis atque nostrum eum tempore, possimus saepe?
-						.tabs__content Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque earum itaque, ipsum, fugiat, nam autem quidem recusandae culpa delectus accusamus excepturi magnam porro placeat consequuntur consectetur! Ex distinctio commodi omnis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga sint atque hic dolorum. Voluptatibus minus sint, praesentium numquam nemo sed. Porro ab debitis veritatis quisquam voluptas iste laudantium dolore ea? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae laboriosam earum dolore aspernatur quia, a ab ducimus velit culpa non? Officiis odit cum veritatis atque nostrum eum tempore, possimus saepe?
-						.tabs__content Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum tenetur ea minima quo laborum, illo necessitatibus aperiam? Molestias ab, dicta, eveniet earum rerum deleniti deserunt, architecto eaque porro laboriosam incidunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga sint atque hic dolorum. Voluptatibus minus sint, praesentium numquam nemo sed. Porro ab debitis veritatis quisquam voluptas iste laudantium dolore ea? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae laboriosam earum dolore aspernatur quia, a ab ducimus velit culpa non? Officiis odit cum veritatis atque nostrum eum tempore, possimus saepe?
+						.tabs__content.active
+							p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, rem quis eius at sunt ducimus esse, atque illo quaerat quo temporibus a soluta tempora. Iste sequi error distinctio eveniet cumque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga sint atque hic dolorum. Voluptatibus minus sint, praesentium numquam nemo sed. Porro ab debitis veritatis quisquam voluptas iste laudantium dolore ea? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae laboriosam earum dolore aspernatur quia, a ab ducimus velit culpa non? Officiis odit cum veritatis atque nostrum eum tempore, possimus saepe?
+							+e.size-table.table-responsive
+								table
+									tr
+										th Размер(рост)
+										th Длина изделия(см):
+										th Полуокружность груди(см):
+										th Длина рукава:(см)
+									tr
+										td 122
+										td 40
+										td 37
+										td 43
+									tr
+										td 122
+										td 40
+										td 37
+										td 43
+									tr
+										td 122
+										td 40
+										td 37
+										td 43
+									tr
+										td 122
+										td 40
+										td 37
+										td 43
+									tr
+										td 122
+										td 40
+										td 37
+										td 43
+									tr
+										td 122
+										td 40
+										td 37
+										td 43
+						.tabs__content
+							+e.specifications-table
+								table
+									tbody
+										tr
+											th Бренд
+											td
+												a(href='#') Lukas
+										tr
+											th Цвет
+											td
+												a(href='#') Синий
+										tr
+											th Подкатегория
+											td
+												a(href='#') Жакеты, 
+												a(href='#') пиджаки
+										tr
+											th Размер одежды
+											td
+												a(href='#') 122, 
+												a(href='#') 128, 
+												a(href='#') 134, 
+												a(href='#') 146
+
+						.tabs__content
+							<form class="form-horizontal" id="form-review">
+								<div id="review">
+									<table class="table table-striped table-bordered">
+										<tbody>
+											<tr>
+												<td style="width: 50%;"><strong>Федр</strong></td>
+												<td class="text-right">22.06.2017</td>
+											</tr>
+											<tr>
+												<td colspan="2">
+													<p>Партнерская программа Мой Магазин совершенно бесплатна и позволяет участникам получать дополнительный доход путём размещения ссылок как на весь наш магазин Мой Магазин, так и на отдельные товары. Каждая покупка, совершённая по партнерской ссылке, принесёт доход! Стандартный размер комиссии составляет 5%.
+													</p>
+													<div class="rate"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<table class="table table-striped table-bordered">
+										<tbody>
+											<tr>
+												<td style="width: 50%;"><strong>Иванка</strong></td>
+												<td class="text-right">22.06.2017</td>
+											</tr>
+											<tr>
+												<td colspan="2">
+													<p>Партнерская программа Мой Магазин совершенно бесплатна и позволяет участникам получать дополнительный доход путём размещения ссылок как на весь наш магазин Мой Магазин, так и на отдельные товары. Каждая покупка, совершённая по партнерской ссылке, принесёт доход! Стандартный размер комиссии составляет 5%.
+													</p>
+													<div class="rate"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="text-right"></div>
+								</div>
+								<h2>Написать отзыв</h2>
+								<div class="form-group required">
+									<div><label class="control-label" for="input-name">Ваше имя:</label><input type="text" name="name" value="" id="input-name" class="form-control"></div>
+								</div>
+								<div class="form-group required">
+									<div><label class="control-label" for="input-review">Ваш отзыв</label><textarea name="text"	rows="5" id="input-review" class="form-control"></textarea>
+										<div class="help-block"><span class="text-danger">Внимание:</span> HTML не поддерживается! Используйте обычный текст!</div>
+									</div>
+								</div>
+								<div class="form-group required">
+									<div>
+										<label class="control-label">Рейтинг: </label>
+										| &nbsp;&nbsp;&nbsp;Плохо&nbsp;
+										<input type="radio" name="rating" value="1">
+										<input type="radio" name="rating" value="2">
+										<input type="radio" name="rating" value="3">
+										<input type="radio" name="rating" value="4">
+										<input type="radio" name="rating" value="5">
+										|&nbsp;Хорошо
+									</div>
+								</div>
+								<div class="buttons clearfix">
+									<div class="pull-right"><button type="button" id="button-review" data-loading-text="Загрузка..." lass="btn btn-primary">Продолжить</button></div>
+								</div>
+							</form>
 
 
 	// end s-product

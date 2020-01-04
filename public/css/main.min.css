@@ -9112,6 +9112,10 @@ a {
   color: #3632ec;
 }
 
+.s-product .rate {
+  color: #ff8b2d;
+}
+
 .s-product .tabs__caption {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9155,6 +9159,64 @@ a {
   border: 1px solid #ccc;
   background-color: #fff;
   padding: 0.625rem 0.9375rem;
+}
+
+.s-product .tabs__content h2 {
+  text-transform: none;
+  font-size: 1.875rem;
+}
+
+.s-product .tabs__content h2::before,
+.s-product .tabs__content h2::after {
+  content: none;
+}
+
+.s-product__specifications-table table {
+  width: 100%;
+}
+
+.s-product__specifications-table table tr {
+  border: 1px solid #ccc;
+}
+
+.s-product__specifications-table table th {
+  border-right: 1px solid #ccc;
+  padding: 0.625rem;
+  width: 40%;
+  background-color: #f8f8f8;
+}
+
+.s-product__specifications-table table td {
+  padding: 0.625rem;
+}
+
+.s-product__specifications-table table a:hover {
+  text-decoration: none;
+  color: #ff8b2d;
+  opacity: .7;
+}
+
+.s-product__size-table {
+  margin-top: 0.625rem;
+}
+
+.s-product__size-table table {
+  border-spacing: 0;
+  border-collapse: separate;
+  width: 100%;
+  min-width: 34.375rem;
+  background-color: #fff;
+  overflow: auto;
+}
+
+.s-product__size-table td,
+.s-product__size-table th {
+  padding: 0.1875rem 0.3125rem;
+  border: 1px solid #ccc;
+}
+
+.s-product__size-table tr:nth-child(2n) {
+  background-color: #f8f8f8;
 }
 
 .s-recomend {
@@ -9551,6 +9613,10 @@ a {
   color: #fff;
   text-decoration: none;
   opacity: .7;
+}
+
+.top-line .rate {
+  color: #ff8b2d;
 }
 
 .toggle-menu-mobile {
