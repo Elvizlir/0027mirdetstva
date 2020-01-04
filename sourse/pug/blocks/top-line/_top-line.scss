@@ -150,6 +150,24 @@
     margin-right: rem(10);
   }
 
+  &__links-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &__link{
+    padding: rem(5);
+    font-size: rem(18);
+    color: #fff;
+    text-transform: uppercase;
+    &:hover{
+      color: #fff;
+      text-decoration: none;
+      opacity: .7;
+    }
+  }
+
 
 // 
 @include media-breakpoint-up(xl) {}
