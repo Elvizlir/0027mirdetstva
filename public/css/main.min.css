@@ -65,6 +65,11 @@
   width: 1em;
 }
 
+.icon-fb {
+  font-size: 9.6123rem;
+  width: 1.00001em;
+}
+
 .icon-heart {
   font-size: 47.17rem;
   width: 1em;
@@ -90,6 +95,11 @@
   width: 1em;
 }
 
+.icon-pr {
+  font-size: 31.005rem;
+  width: 1em;
+}
+
 .icon-right-arrow {
   font-size: 50rem;
   width: 1em;
@@ -103,6 +113,16 @@
 .icon-star {
   font-size: 44.444rem;
   width: 1.12501em;
+}
+
+.icon-tg {
+  font-size: 50rem;
+  width: 1em;
+}
+
+.icon-tw {
+  font-size: 50rem;
+  width: 1em;
 }
 
 .icon-user {
@@ -8032,6 +8052,7 @@ h2::after {
 
 .soc .icon {
   color: #fff;
+  font-size: 1.0625rem;
 }
 
 .soc .icon-phone {
@@ -8911,6 +8932,10 @@ a {
   font-size: 1.125rem;
 }
 
+.s-product__add-title:hover {
+  text-decoration: none;
+}
+
 .s-product .star-block {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -9017,11 +9042,11 @@ a {
 }
 
 .s-product__status {
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   line-height: 1;
   text-transform: uppercase;
   font-weight: 700;
-  color: #71CC51;
+  color: #06B806;
 }
 
 .s-product__self {
@@ -9102,10 +9127,6 @@ a {
 
 .s-product .soc__item {
   border-color: #3632ec;
-}
-
-.s-product .soc__item:first-child {
-  display: none !important;
 }
 
 .s-product .soc .icon {
@@ -9613,10 +9634,6 @@ a {
   color: #fff;
   text-decoration: none;
   opacity: .7;
-}
-
-.top-line .rate {
-  color: #ff8b2d;
 }
 
 .toggle-menu-mobile {

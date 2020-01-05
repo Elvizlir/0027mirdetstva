@@ -8,7 +8,7 @@ mixin s-product()
 						+e.big-slider--js
 							mixin bg-prod-slide()
 								.slider-slide
-									+e.slider-img-wrap--bg
+									+e.A.slider-img-wrap--bg(data-fancybox="product-gal" href='img/@2x/product-img.jpg')
 										img(src='img/@2x/product-img.jpg' alt='')
 							+bg-prod-slide()
 							+bg-prod-slide()
@@ -36,7 +36,7 @@ mixin s-product()
 						+e.size-title Выберите размер
 						+e.size-block
 							label
-								input(type='radio' name='size')
+								input(type='radio' name='size' checked)
 								span 31
 							label
 								input(type='radio' name='size')
@@ -56,7 +56,7 @@ mixin s-product()
 						+e.A.size-link(href='#') Таблица размеров
 						+e.status В наличии
 						+e.self доступен самовывоз
-						+e.alert #Внимание! Цена действительна только при заказе на сайте!<br>В розничном магазине цена может отличаться!
+						+e.alert Внимание! Цена действительна только при заказе на сайте!<br>В розничном магазине цена может отличаться!
 
 						+e.btn-wrap
 							+e.btn.btn.btn-info(type="button") Быстрый заказ
@@ -69,20 +69,38 @@ mixin s-product()
 								+icon('compare')
 
 						+e.share Поделиться
-						+soc()
+						+b.soc
+							mixin item()
+								+e.A.item(href="№" target="_blank")&attributes(attributes)
+									block
+							+item()
+								+icon('fb')
+							
+							+item()
+								+icon('tg')
+							
+							+item()
+								+icon('pr')
+							
+							+item()
+								+icon('tw')
+							
+							+item()
+								+icon('insta')
+							
+							+item()
+								+icon('viber')
 
 					+e.add-col.col-xl-3
 						+e.add-info-block
-							+e.add-title Доставка**
-							+e.add-text в отделение Новой почты курьером на дом самовывоз из магазина
+							+e.A.add-title(href='#') Доставка
+							+e.add-text - В отделение Новой почты<br>- Курьером на дом<br>- Самовывоз из магазина
 						+e.add-info-block
-							+e.add-title Оплата**
-							+e.add-text На карту ПриватБанка При получении на Новой почте При получении в магазине
+							+e.A.add-title(href='#') Оплата
+							+e.add-text - На карту ПриватБанка<br>- При получении на Новой почте<br>- При получении в магазине
 						+e.add-info-block
-							+e.add-title Гарантия**
-							+e.add-text Возврат, Обмен Согласно Закона…
-						+e.add-link **С условиями доставки и оплаты Вы можете ознакомиться по 
-							a(href='#' target='_blank') ссылке
+							+e.A.add-title(href='#') Гарантия
+							+e.add-text - Возврат, Обмен Согласно Закона…<br>- Если надо - вернём
 			+e.tabs-block
 				.tabs
 					.tabs__caption

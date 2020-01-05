@@ -118,6 +118,9 @@
 	&__add-title{
 		font-weight: bold;
 		font-size: rem(18);
+		&:hover{
+			text-decoration: none;
+		}
 	}
 
 	.star-block{
@@ -199,11 +202,11 @@
 	}
 
 	&__status{
-		font-size: rem(28);
+		font-size: rem(20);
 		line-height: 1;
 		text-transform: uppercase;
 		font-weight: 700;
-		color: #71CC51;
+		color: #06B806;
 	}
 
 	&__self{
@@ -273,9 +276,6 @@
 	.soc{
 		justify-content: center;
 		&__item{
-			&:first-child{
-				display: none !important;
-			}
 			border-color: $info;
 		}
 		.icon{
