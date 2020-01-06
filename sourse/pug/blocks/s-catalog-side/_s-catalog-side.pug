@@ -1,0 +1,41 @@
+mixin s-catalog-side()
+	// start s-catalog-side
+	+b.SECTION.s-catalog-side.section#s-catalog-side&attributes(attributes)
+		+e.title фильтр
+		+e.block-wrap
+			+e.block
+				+e.block-title.item-active Категория
+				+e.block-toggle--active
+					+e.UL.block-list
+						- for (var x = 0; x < 8; x++)
+							li
+								a(href='#') Нарядные платья
+			+e.block
+				+e.block-title Тип
+				+e.block-toggle--columns
+					- for (var x = 0; x < 8; x++)
+						+in-c('checkbox','Блузки','prod-type')
+			+e.block
+				+e.block-title Размер одежды
+				+e.block-toggle--columns
+					- for (var x = 0; x < 15; x++)
+						+in-c('checkbox','180','prod-size')
+			+e.block
+				+e.block-title Бренд
+				+e.block-toggle--columns
+					- for (var x = 0; x < 15; x++)
+						+in-c('checkbox','Alfonso','prod-brand')
+			+e.block
+				+e.block-title Цвет
+				+e.block-toggle
+					- for (var x = 0; x < 8; x++)
+						+in-c('checkbox','Барс радужный','prod-color')
+			+e.block
+				+e.block-title Метки
+				+e.block-toggle
+					+e.UL.block-list
+						- for (var x = 0; x < 8; x++)
+							li
+								a(href='#') Демисезонные ботинки для мальчика
+			
+	// end s-catalog-side

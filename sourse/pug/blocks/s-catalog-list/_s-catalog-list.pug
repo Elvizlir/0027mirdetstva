@@ -1,0 +1,53 @@
+mixin s-catalog-list()
+	// start s-catalog-list
+	+b.SECTION.s-catalog-list.section#s-catalog-list&attributes(attributes)
+		h2 Одежда для девочек
+		mixin cat-nav-line()
+			+e.nav-line
+				+e.nav-row.row
+					.col-auto
+						//- +e.dropdown-wrap
+						//- 	span.dropdown-el
+						//- 		input( type="radio" name="sortType" value="new" checked="checked" id="sort-new")
+						//- 		label(for="sort-new") По новизне
+						//- 		input( type="radio" name="sortType" value="popular" checked="checked" id="sort-popular")
+						//- 		label(for="sort-popular") По популярности
+						//- 		input( type="radio" name="sortType" value="priceHigh" checked="checked" id="sort-priceHigh")
+						//- 		label(for="sort-priceHigh") Сначала дорогие
+						//- 		input( type="radio" name="sortType" value="priceLow" checked="checked" id="sort-priceLow")
+						//- 		label(for="sort-priceLow") Сначала дешёвые
+						//- 		input( type="radio" name="sortType" value="Relevance" checked="checked" id="sort-relevance")
+						//- 		label(for="sort-relevance") По релевантности
+					.col-auto
+		+cat-nav-line()
+
+		+e.main-block
+			+e.row.row
+				mixin catalog-i(p, s)
+					+e.col.col-4
+						+e.item
+							a(href='#')
+								if p == 'price'
+									+e.lable
+										img.res-i(src='img/@2x/lable-price.png')
+								+e.img-wrap.bg-wrap
+									img.bg-img(src='img/@2x/product-img.jpg' alt='')
+								+e.item-descr
+									+e.item-title Праздничное платье Lukas 9536 нежно-голубого цвета
+							+e.item-order
+								+e.item-price 1 200 грн.
+								if p == 'price'
+									+e.item-price--light 800 грн.
+							if s == 'order'
+								+e.status--light Можно заказать
+							else
+								+e.status в наличии
+							+e.item-btn.btn.btn-primary(type="button") подробнее
+				- for (var x = 0; x < 5; x++)
+					+catalog-i('price')
+					+catalog-i('','order')
+					+catalog-i()
+					+catalog-i('')
+					+catalog-i('','order')
+					+catalog-i()
+	// end s-catalog-list

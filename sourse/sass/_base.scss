@@ -38,8 +38,7 @@ html {
 
 body {
 	background-image: url(../img/body-bg.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-repeat: repeat;
 	min-width: 320px;
 	position: relative; 
 	&::before {
@@ -487,4 +486,8 @@ h2{
 		width: rem(135);
 		background: linear-gradient(90deg, rgba(255,144,1,1) 10%, rgba(249,255,0,0) 100%);
 	}
+}
+
+.catalog-page__main-section{
+	margin-bottom: rem(30);
 }

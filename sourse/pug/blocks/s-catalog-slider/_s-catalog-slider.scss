@@ -112,6 +112,7 @@
 	}
 
 	&__item-price{
+		font-weight: 700;
 		color: $info;
 		font-size: rem(18);
 		@include media-breakpoint-up(xl){
