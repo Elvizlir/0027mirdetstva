@@ -1,7 +1,8 @@
 mixin s-catalog-side()
 	// start s-catalog-side
-	+b.SECTION.s-catalog-side.section#s-catalog-side&attributes(attributes)
-		+e.title фильтр
+	+b.s-catalog-side.section#s-catalog-side&attributes(attributes)
+		+e.title--desktop фильтр
+		+e.title--mobile фильтр
 		+e.block-wrap
 			+e.block
 				+e.block-title.item-active Категория

@@ -5,31 +5,29 @@ mixin s-catalog-list()
 		mixin cat-nav-line()
 			+e.nav-line
 				+e.nav-row.row
-					.col-auto
-						//- +e.dropdown-wrap
-						//- 	span.dropdown-el
-						//- 		input( type="radio" name="sortType" value="new" checked="checked" id="sort-new")
-						//- 		label(for="sort-new") По новизне
-						//- 		input( type="radio" name="sortType" value="popular" checked="checked" id="sort-popular")
-						//- 		label(for="sort-popular") По популярности
-						//- 		input( type="radio" name="sortType" value="priceHigh" checked="checked" id="sort-priceHigh")
-						//- 		label(for="sort-priceHigh") Сначала дорогие
-						//- 		input( type="radio" name="sortType" value="priceLow" checked="checked" id="sort-priceLow")
-						//- 		label(for="sort-priceLow") Сначала дешёвые
-						//- 		input( type="radio" name="sortType" value="Relevance" checked="checked" id="sort-relevance")
-						//- 		label(for="sort-relevance") По релевантности
-					.col-auto
+					+e.nav-col.col
+						select.custom-select.sources(name="sources" placeholder='По релевантности')
+							option(value="Relevance") По релевантности
+							option(value="new") По новизне
+							option(value="popular") По популярности
+							option(value="priceHigh") Сначала дорогие
+							option(value="priceLow") Сначала дешёвые
+						+e.show Отображение 1-30 из 541
+							
+
+					+e.nav-col.col-auto
+						+pugin()
 		+cat-nav-line()
 
 		+e.main-block
 			+e.row.row
 				mixin catalog-i(p, s)
-					+e.col.col-4
+					+e.col.col-md-4.col-sm-6
 						+e.item
 							a(href='#')
 								if p == 'price'
 									+e.lable
-										img.res-i(src='img/@2x/lable-price.png')
+										img.res-i(src='img/@2x/lable-price.png' alt='')
 								+e.img-wrap.bg-wrap
 									img.bg-img(src='img/@2x/product-img.jpg' alt='')
 								+e.item-descr
@@ -50,4 +48,5 @@ mixin s-catalog-list()
 					+catalog-i('')
 					+catalog-i('','order')
 					+catalog-i()
+		+cat-nav-line()
 	// end s-catalog-list

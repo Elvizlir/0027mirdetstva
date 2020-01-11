@@ -2,18 +2,51 @@
 // start .s-catalog-side
 .s-catalog-side {
 	padding: 0;
-
+	padding-bottom: rem(15);
+	@include media-breakpoint-up(lg){
+		padding: 0;
+	}
+	
 	&__title{
 		background-color: $info;
-		text-align: center;
 		color: #fff;
 		text-transform: uppercase;
-		font-size: rem(24);
+		@include rfs(24);
 		padding: rem(10) rem(5);
 		line-height: 1;
+		&--mobile{
+			cursor: pointer;
+			padding: rem(10) rem(20);
+			@extend .d-lg-none;
+			position: relative;
+			&::after{
+				content: url('../img/svg/catalog-side-arrow.svg');
+				@include a-cent(y);
+				transform-origin: center;
+				right: rem(15);
+				transform: translateY(-50%) rotate(-90deg);
+				@include mt;
+			}
+			&.item-active{
+				&::after{
+					transform: translateY(-50%) rotate(0deg);
+				}
+			}
+		}
+		&--desktop{
+			text-align: center;
+			@extend .d-none;
+			@extend .d-lg-block;
+		}
 	}
 
 	&__block-wrap{
+		@include media-breakpoint-down(md){
+			display: none;
+		}
+		@include media-breakpoint-up(lg){
+			display: block !important;
+		}
 		box-shadow: 7px 11px 29px 3px rgba(0, 0, 0, 0.33);
 	}
 
@@ -29,7 +62,8 @@
 	&__block-title{
 		cursor: pointer;
 		font-weight: 700;
-		padding-left: rem(17);
+		padding-left: rem(5);
+		padding-right: rem(20);
 		color: $info;
 		font-size: rem(20);
 		line-height: 1;
@@ -41,7 +75,6 @@
 			right: rem(5);
 			transform-origin: center;
 			transform: rotate(-90deg);
-			right: rem(18);
 			@include mt;
 		}
 		&.item-active{

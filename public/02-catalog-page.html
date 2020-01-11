@@ -20,7 +20,7 @@
 		<!-- Custom Browsers Color-->
 		<meta name="theme-color" content="#3361d8">
 		<link rel="stylesheet" href="libs/slick-carousel/slick/slick.css"/>
-		<link rel="stylesheet" href="libs/@fancyapps/fancybox/jquery.fancybox.min.css"/>
+		<link rel="stylesheet" href="libs/@fancyapps/fancybox/jquery.fancybox.min.css"/><link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/main.min.css"/>
 		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
 	</head>
@@ -850,10 +850,12 @@
 				</nav>
 				<div class="catalog-page__main-section">
 					<div class="row">
-						<div class="col-3">
+						<div class="col-lg-3">
 							<!-- start s-catalog-side-->
-							<section class="s-catalog-side section" id="s-catalog-side">
-								<div class="s-catalog-side__title">фильтр
+							<div class="s-catalog-side section" id="s-catalog-side">
+								<div class="s-catalog-side__title s-catalog-side__title--desktop">фильтр
+								</div>
+								<div class="s-catalog-side__title s-catalog-side__title--mobile">фильтр
 								</div>
 								<div class="s-catalog-side__block-wrap">
 									<div class="s-catalog-side__block">
@@ -1005,24 +1007,61 @@
 										</div>
 									</div>
 								</div>
-							</section>
+							</div>
 							<!-- end s-catalog-side-->
 						</div>
-						<div class="col-9">
+						<div class="col-lg-9">
 							<!-- start s-catalog-list-->
 							<section class="s-catalog-list section" id="s-catalog-list">
 								<h2>Одежда для девочек</h2>
 								<div class="s-catalog-list__nav-line">
 									<div class="s-catalog-list__nav-row row">
-										<div class="col-auto"></div>
-										<div class="col-auto"></div>
+										<div class="s-catalog-list__nav-col col">
+											<select class="custom-select sources" name="sources" placeholder="По релевантности">
+												<option value="Relevance">По релевантности</option>
+												<option value="new">По новизне</option>
+												<option value="popular">По популярности</option>
+												<option value="priceHigh">Сначала дорогие</option>
+												<option value="priceLow">Сначала дешёвые</option>
+											</select>
+											<div class="s-catalog-list__show">Отображение 1-30 из 541
+											</div>
+										</div>
+										<div class="s-catalog-list__nav-col col-auto">
+											<div class="pagination-wrapper">
+												<ul class="page-numbers">
+															<li><span class="prev page-numbers">
+																	<svg class="icon icon-prev ">
+																		<use xlink:href="img/svg/sprite.svg#prev"></use>
+																	</svg></span>
+															</li>
+															<li><span class="page-numbers current"> 1</span>
+															</li>
+															<li><a class="page-numbers" href="#">2</a>
+															</li>
+															<li><a class="page-numbers" href="#">3</a>
+															</li>
+															<li><a class="page-numbers" href="#">4</a>
+															</li>
+															<li><a class="page-numbers" href="#">...</a>
+															</li>
+															<li><a class="page-numbers" href="#">18</a>
+															</li>
+															<li><a class="next page-numbers" href="#">
+																	<svg class="icon icon-next ">
+																		<use xlink:href="img/svg/sprite.svg#next"></use>
+																	</svg></a>
+															</li>
+												</ul>
+											</div>
+										</div>
 									</div>
 								</div>
 								<div class="s-catalog-list__main-block">
 									<div class="s-catalog-list__row row">
-										<div class="s-catalog-list__col col-4">
+										<div class="s-catalog-list__col col-md-4 col-sm-6">
 											<div class="s-catalog-list__item"><a href="#">
-													<div class="s-catalog-list__lable"><img class="res-i" src="img/@2x/lable-price.png"/>
+													<div class="s-catalog-list__lable"><img class="res-i" src="img/@2x/lable-price.png" alt=""/>
 													</div>
 													<div class="s-catalog-list__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/product-img.jpg" alt=""/>
 													</div>
@@ -1042,7 +1081,7 @@
 												</button>
 											</div>
 										</div>
-										<div class="s-catalog-list__col col-4">
+										<div class="s-catalog-list__col col-md-4 col-sm-6">
 											<div class="s-catalog-list__item"><a href="#">
 													<div class="s-catalog-list__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/product-img.jpg" alt=""/>
 													</div>
@@ -1060,7 +1099,7 @@
 												</button>
 											</div>
 										</div>
-										<div class="s-catalog-list__col col-4">
+										<div class="s-catalog-list__col col-md-4 col-sm-6">
 											<div class="s-catalog-list__item"><a href="#">
 													<div class="s-catalog-list__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/product-img.jpg" alt=""/>
 													</div>
@@ -1078,7 +1117,7 @@
 												</button>
 											</div>
 										</div>
-										<div class="s-catalog-list__col col-4">
+										<div class="s-catalog-list__col col-md-4 col-sm-6">
 											<div class="s-catalog-list__item"><a href="#">
 													<div class="s-catalog-list__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/product-img.jpg" alt=""/>
 													</div>
@@ -1096,7 +1135,7 @@
 												</button>
 											</div>
 										</div>
-										<div class="s-catalog-list__col col-4">
+										<div class="s-catalog-list__col col-md-4 col-sm-6">
 											<div class="s-catalog-list__item"><a href="#">
 													<div class="s-catalog-list__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/product-img.jpg" alt=""/>
 													</div>
@@ -1114,7 +1153,7 @@
 												</button>
 											</div>
 										</div>
-										<div class="s-catalog-list__col col-4">
+										<div class="s-catalog-list__col col-md-4 col-sm-6">
 											<div class="s-catalog-list__item"><a href="#">
 													<div class="s-catalog-list__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/product-img.jpg" alt=""/>
 													</div>
@@ -1132,9 +1171,9 @@
 												</button>
 											</div>
 										</div>
-										<div class="s-catalog-list__col col-4">
+										<div class="s-catalog-list__col col-md-4 col-sm-6">
 											<div class="s-catalog-list__item"><a href="#">
-													<div class="s-catalog-list__lable"><img class="res-i" src="img/@2x/lable-price.png"/>
+													<div class="s-catalog-list__lable"><img class="res-i" src="img/@2x/lable-price.png" alt=""/>
 													</div>
 													<div class="s-catalog-list__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/product-img.jpg" alt=""/>
 													</div>
@@ -1154,7 +1193,7 @@
 												</button>
 											</div>
 										</div>
-										<div class="s-catalog-list__col col-4">
+										<div class="s-catalog-list__col col-md-4 col-sm-6">
 											<div class="s-catalog-list__item"><a href="#">
 													<div class="s-catalog-list__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/product-img.jpg" alt=""/>
 													</div>
@@ -1172,7 +1211,7 @@
 												</button>
 											</div>
 										</div>
-										<div class="s-catalog-list__col col-4">
+										<div class="s-catalog-list__col col-md-4 col-sm-6">
 											<div class="s-catalog-list__item"><a href="#">
 													<div class="s-catalog-list__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/product-img.jpg" alt=""/>
 													</div>
@@ -1190,7 +1229,7 @@
 												</button>
 											</div>
 										</div>
-										<div class="s-catalog-list__col col-4">
+										<div class="s-catalog-list__col col-md-4 col-sm-6">
 											<div class="s-catalog-list__item"><a href="#">
 													<div class="s-catalog-list__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/product-img.jpg" alt=""/>
 													</div>
@@ -1208,7 +1247,7 @@
 												</button>
 											</div>
 										</div>
-										<div class="s-catalog-list__col col-4">
+										<div class="s-catalog-list__col col-md-4 col-sm-6">
 											<div class="s-catalog-list__item"><a href="#">
 													<div class="s-catalog-list__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/product-img.jpg" alt=""/>
 													</div>
@@ -1226,7 +1265,7 @@
 												</button>
 											</div>
 										</div>
-										<div class="s-catalog-list__col col-4">
+										<div class="s-catalog-list__col col-md-4 col-sm-6">
 											<div class="s-catalog-list__item"><a href="#">
 													<div class="s-catalog-list__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/product-img.jpg" alt=""/>
 													</div>
@@ -1244,9 +1283,9 @@
 												</button>
 											</div>
 										</div>
-										<div class="s-catalog-list__col col-4">
+										<div class="s-catalog-list__col col-md-4 col-sm-6">
 											<div class="s-catalog-list__item"><a href="#">
-													<div class="s-catalog-list__lable"><img class="res-i" src="img/@2x/lable-price.png"/>
+													<div class="s-catalog-list__lable"><img class="res-i" src="img/@2x/lable-price.png" alt=""/>
 													</div>
 													<div class="s-catalog-list__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/product-img.jpg" alt=""/>
 													</div>
@@ -1266,7 +1305,7 @@
 												</button>
 											</div>
 										</div>
-										<div class="s-catalog-list__col col-4">
+										<div class="s-catalog-list__col col-md-4 col-sm-6">
 											<div class="s-catalog-list__item"><a href="#">
 													<div class="s-catalog-list__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/product-img.jpg" alt=""/>
 													</div>
@@ -1284,7 +1323,7 @@
 												</button>
 											</div>
 										</div>
-										<div class="s-catalog-list__col col-4">
+										<div class="s-catalog-list__col col-md-4 col-sm-6">
 											<div class="s-catalog-list__item"><a href="#">
 													<div class="s-catalog-list__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/product-img.jpg" alt=""/>
 													</div>
@@ -1302,7 +1341,7 @@
 												</button>
 											</div>
 										</div>
-										<div class="s-catalog-list__col col-4">
+										<div class="s-catalog-list__col col-md-4 col-sm-6">
 											<div class="s-catalog-list__item"><a href="#">
 													<div class="s-catalog-list__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/product-img.jpg" alt=""/>
 													</div>
@@ -1320,7 +1359,7 @@
 												</button>
 											</div>
 										</div>
-										<div class="s-catalog-list__col col-4">
+										<div class="s-catalog-list__col col-md-4 col-sm-6">
 											<div class="s-catalog-list__item"><a href="#">
 													<div class="s-catalog-list__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/product-img.jpg" alt=""/>
 													</div>
@@ -1338,7 +1377,7 @@
 												</button>
 											</div>
 										</div>
-										<div class="s-catalog-list__col col-4">
+										<div class="s-catalog-list__col col-md-4 col-sm-6">
 											<div class="s-catalog-list__item"><a href="#">
 													<div class="s-catalog-list__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/product-img.jpg" alt=""/>
 													</div>
@@ -1356,9 +1395,9 @@
 												</button>
 											</div>
 										</div>
-										<div class="s-catalog-list__col col-4">
+										<div class="s-catalog-list__col col-md-4 col-sm-6">
 											<div class="s-catalog-list__item"><a href="#">
-													<div class="s-catalog-list__lable"><img class="res-i" src="img/@2x/lable-price.png"/>
+													<div class="s-catalog-list__lable"><img class="res-i" src="img/@2x/lable-price.png" alt=""/>
 													</div>
 													<div class="s-catalog-list__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/product-img.jpg" alt=""/>
 													</div>
@@ -1378,7 +1417,7 @@
 												</button>
 											</div>
 										</div>
-										<div class="s-catalog-list__col col-4">
+										<div class="s-catalog-list__col col-md-4 col-sm-6">
 											<div class="s-catalog-list__item"><a href="#">
 													<div class="s-catalog-list__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/product-img.jpg" alt=""/>
 													</div>
@@ -1396,7 +1435,7 @@
 												</button>
 											</div>
 										</div>
-										<div class="s-catalog-list__col col-4">
+										<div class="s-catalog-list__col col-md-4 col-sm-6">
 											<div class="s-catalog-list__item"><a href="#">
 													<div class="s-catalog-list__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/product-img.jpg" alt=""/>
 													</div>
@@ -1414,7 +1453,7 @@
 												</button>
 											</div>
 										</div>
-										<div class="s-catalog-list__col col-4">
+										<div class="s-catalog-list__col col-md-4 col-sm-6">
 											<div class="s-catalog-list__item"><a href="#">
 													<div class="s-catalog-list__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/product-img.jpg" alt=""/>
 													</div>
@@ -1432,7 +1471,7 @@
 												</button>
 											</div>
 										</div>
-										<div class="s-catalog-list__col col-4">
+										<div class="s-catalog-list__col col-md-4 col-sm-6">
 											<div class="s-catalog-list__item"><a href="#">
 													<div class="s-catalog-list__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/product-img.jpg" alt=""/>
 													</div>
@@ -1450,7 +1489,7 @@
 												</button>
 											</div>
 										</div>
-										<div class="s-catalog-list__col col-4">
+										<div class="s-catalog-list__col col-md-4 col-sm-6">
 											<div class="s-catalog-list__item"><a href="#">
 													<div class="s-catalog-list__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/product-img.jpg" alt=""/>
 													</div>
@@ -1468,9 +1507,9 @@
 												</button>
 											</div>
 										</div>
-										<div class="s-catalog-list__col col-4">
+										<div class="s-catalog-list__col col-md-4 col-sm-6">
 											<div class="s-catalog-list__item"><a href="#">
-													<div class="s-catalog-list__lable"><img class="res-i" src="img/@2x/lable-price.png"/>
+													<div class="s-catalog-list__lable"><img class="res-i" src="img/@2x/lable-price.png" alt=""/>
 													</div>
 													<div class="s-catalog-list__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/product-img.jpg" alt=""/>
 													</div>
@@ -1490,7 +1529,7 @@
 												</button>
 											</div>
 										</div>
-										<div class="s-catalog-list__col col-4">
+										<div class="s-catalog-list__col col-md-4 col-sm-6">
 											<div class="s-catalog-list__item"><a href="#">
 													<div class="s-catalog-list__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/product-img.jpg" alt=""/>
 													</div>
@@ -1508,7 +1547,7 @@
 												</button>
 											</div>
 										</div>
-										<div class="s-catalog-list__col col-4">
+										<div class="s-catalog-list__col col-md-4 col-sm-6">
 											<div class="s-catalog-list__item"><a href="#">
 													<div class="s-catalog-list__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/product-img.jpg" alt=""/>
 													</div>
@@ -1526,7 +1565,7 @@
 												</button>
 											</div>
 										</div>
-										<div class="s-catalog-list__col col-4">
+										<div class="s-catalog-list__col col-md-4 col-sm-6">
 											<div class="s-catalog-list__item"><a href="#">
 													<div class="s-catalog-list__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/product-img.jpg" alt=""/>
 													</div>
@@ -1544,7 +1583,7 @@
 												</button>
 											</div>
 										</div>
-										<div class="s-catalog-list__col col-4">
+										<div class="s-catalog-list__col col-md-4 col-sm-6">
 											<div class="s-catalog-list__item"><a href="#">
 													<div class="s-catalog-list__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/product-img.jpg" alt=""/>
 													</div>
@@ -1562,7 +1601,7 @@
 												</button>
 											</div>
 										</div>
-										<div class="s-catalog-list__col col-4">
+										<div class="s-catalog-list__col col-md-4 col-sm-6">
 											<div class="s-catalog-list__item"><a href="#">
 													<div class="s-catalog-list__img-wrap bg-wrap"><img class="bg-img" src="img/@2x/product-img.jpg" alt=""/>
 													</div>
@@ -1578,6 +1617,49 @@
 												</div>
 												<button class="s-catalog-list__item-btn btn btn-primary" type="button">подробнее
 												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="s-catalog-list__nav-line">
+									<div class="s-catalog-list__nav-row row">
+										<div class="s-catalog-list__nav-col col">
+											<select class="custom-select sources" name="sources" placeholder="По релевантности">
+												<option value="Relevance">По релевантности</option>
+												<option value="new">По новизне</option>
+												<option value="popular">По популярности</option>
+												<option value="priceHigh">Сначала дорогие</option>
+												<option value="priceLow">Сначала дешёвые</option>
+											</select>
+											<div class="s-catalog-list__show">Отображение 1-30 из 541
+											</div>
+										</div>
+										<div class="s-catalog-list__nav-col col-auto">
+											<div class="pagination-wrapper">
+												<ul class="page-numbers">
+															<li><span class="prev page-numbers">
+																	<svg class="icon icon-prev ">
+																		<use xlink:href="img/svg/sprite.svg#prev"></use>
+																	</svg></span>
+															</li>
+															<li><span class="page-numbers current"> 1</span>
+															</li>
+															<li><a class="page-numbers" href="#">2</a>
+															</li>
+															<li><a class="page-numbers" href="#">3</a>
+															</li>
+															<li><a class="page-numbers" href="#">4</a>
+															</li>
+															<li><a class="page-numbers" href="#">...</a>
+															</li>
+															<li><a class="page-numbers" href="#">18</a>
+															</li>
+															<li><a class="next page-numbers" href="#">
+																	<svg class="icon icon-next ">
+																		<use xlink:href="img/svg/sprite.svg#next"></use>
+																	</svg></a>
+															</li>
+												</ul>
 											</div>
 										</div>
 									</div>
@@ -1589,7 +1671,7 @@
 				</div>
 			</div>
 			<!-- start s-catalog-slider-->
-			<section class="s-catalog-slider section" id="s-catalog-slider">
+			<section class="s-catalog-slider section">
 				<div class="container">
 					<h2>Слайдер</h2>
 					<div class="s-catalog-slider__slider-wrap">
@@ -1774,7 +1856,7 @@
 			</section>
 			<!-- end s-catalog-slider-->
 			<!-- start s-catalog-slider-->
-			<section class="s-catalog-slider section" id="s-catalog-slider">
+			<section class="s-catalog-slider section">
 				<div class="container">
 					<h2>Слайдер</h2>
 					<div class="s-catalog-slider__slider-wrap">
@@ -1959,7 +2041,7 @@
 			</section>
 			<!-- end s-catalog-slider-->
 			<!-- start s-catalog-slider-->
-			<section class="s-catalog-slider section" id="s-catalog-slider">
+			<section class="s-catalog-slider section">
 				<div class="container">
 					<h2>Слайдер</h2>
 					<div class="s-catalog-slider__slider-wrap">
@@ -2143,6 +2225,72 @@
 				</div>
 			</section>
 			<!-- end s-catalog-slider-->
+			<!-- start s-catalog-info-->
+			<section class="s-catalog-info section" id="s-catalog-info">
+				<div class="container">
+					<h3>Детская одежда для девочки.</h3>
+					<p>
+						С появление на свет нашего любимого чада, с первых дней его жизни мы пытаемся выделить его из массы. Долго придумываем звучное имя, подбираем дизайн для детской комнаты, коляску, кроватку и, конечно костюм на выписку из роддома. С первого его вздоха мы — родители, бабушки и дедушки, тети и дяди, друзья семьи стараемся превратить жизнь маленького человека в сказку. И все здесь имеет значение!<br>Когда в семье появляется девочка, в семье  присутствует особое трепетное отношение к нежнейшему созданию. Ведь в семье растет папина принцесса, будущая женщина, которая будет воспитывать своих детей с таким же трепетом и любовью, окружая их заботой и теплом! Это будущая хранительница семейного очага, которая будет создавать уют в доме, и восхищать мужа красотой,  душевной добротой.<br>
+						Для того, чтобы девочка росла опрятной, ухоженной и аккуратной, ее необходимо приучать к порядку как можно раньше. Девочка, на которой новое красивое платье, будет стараться не выпачкать его, красиво уложить косы. Те девочки,  которые обсуждают с мамой, в каком наряде они выйдут завтра в свет, помимо положительных эмоций от общения, получают бесценные уроки по мастерству совмещения разных частей гардероба в единый ансамбль. Такие девочки  привлекают внимание окружающих красивым внешним видом. Они стараются соответствовать красивой картинке во всем. Меняется походка, манера общения и поведения в обществе. Модно и стильно одетой девочке с хорошими манерами и опрятным внешним видом легче влиться в коллектив, завести знакомства и т. д.<br>
+						Человека красит одежда. Голые люди имеют крайне малое влияние в обществе, а то и совсем никакого. Это слова известного американского писателя юмориста и сатирика, который написал прекрасные произведения для детей и о детях Марк Твен.<br>
+						Мы хотим, чтобы наши дети были успешными, чтобы у них все сложилось, чтобы они росли в гармонии с собой и с окружающим их миром, достигали вершин, находили свое место под солнцем. И делаем для этого все от нас зависящее. 
+					</p>
+					<h3>Какой должна быть детская одежда для девочек 2019?</h3>
+					<p>
+						Что такое стильно и модно одеваться? Стоит ли покупать много одежды или можно ограничиться малым, но выбрать качественную одежду  для ребенка? Какой должна быть детская одежда для девочек 2019? Нужна ли ребенку брендовая детская одежда для девочек? Как грамотно составить гардероб ребенка? Мы часто задаем себе эти вопросы в обыденной жизни.<br>Для того, чтобы ребенок выглядел красиво совершенно необязательно заваливать шкафы ненужной одеждой, которую ребенок не успеет и поносить. Ведь дети так быстро растут. Обратите внимание на то, чтобы одежда легко совмещалась в единый ансамбль. Известный дизайнер, основательница стиля панк в моде и учительница в прошлом Вивьен Вествуд  советовала: «Покупайте меньше и выбирайте лучше».</p>
+					<h3>Детская весенняя одежда для девочек.</h3>
+					<p>Любому ребенку необходима сезонная одежда. Детская весенняя одежда для девочек легкая и разнообразная. Верхняя детская одежда для девочки должна гармонично смотреться с брюками, джинсами, платьем, школьной формой и одеждой в деловом и спортивном стиле. К брюкам подойдут коротенькие курточки или курточки средней длины. К платью, юбке, школьному сарафану – пальто и плащи. Несмотря на то, что сейчас модно совмещать разные стили в одежде, пропорции должны быть соблюдены. Поэтому детская осенняя одежда в качестве курточки и демисезонного пальто для девочек не будет лишней в гардеробе ребенка. Куртку или жилетку будем носить с брюками, а пальто или плащ с платьем и школьной формой. Это правильно и с практической точки зрения, когда придется постирать верхнюю одежду, обязательно должна быть ей замена. Детская одежда для девочек на весну часто покупается с небольшим запасом, чтобы ее хватило и на осень, ведь летом большинство детей растут активнее, т.к. ярче светит солнышко, свежий воздух, нет интенсивных нагрузок, хорошее питание – овощи, фрукты, ягоды…</p>
+					<h3>Детская зимняя одежда для девочки.</h3>
+					<p>Детская зимняя одежда для девочек до 7 лет подразумевает наличие комплекта из зимнего полукомбинезона и куртки. Девочкам постарше и девочкам подросткам лучше покупать зимнюю куртку или пальто  до или ниже уровня колен, чтобы защитить нижнюю часть тела от ветра и мороза. Такие удлиненные куртки, пуховики, пальто не требуют дополнительной одежды в виде полукомбинезонов или утепленных штанов. Да и совмещать такой комбинезон со школьной формой очень неудобно. я</p>
+					<h3>Летняя детская одежда для девочек.</h3>
+					<p>Летняя детская одежда для девочек должна быть в первую очередь удобной и приятной телу. Ведь лето – это то беззаботное счастливое время, когда ребенок не «привязан» к школе, садику, когда ему предоставляется свобода, которая так необходима. Летом девочке пригодятся ситцевые, льняные, трикотажные сарафаны и платья на каждый день, комплекты типа юбка + футболка, туника + лосины, шорты + футболка. Можно купить отдельно юбку, шорты, трикотажные лосины  и 3-4 футболки, которые можно совмещать с этими вещами. Обязательно купите легкие джинсы или льняные брюки и кофту из хлопка на прохладную вечернюю погоду. Не забудьте про головной убор и купальник. </p>
+					<h3>Нарядная детская одежда на девочку.</h3>
+					<p>
+						Отдельно хочется напомнить про праздничную одежду, которая непременно должна быть в гардеробе девочки. Нарядная детская одежда для девочек бывает очень разной. Так, например, платье для новогоднего утренника с пышной юбкой в пол будет неуместно на вечеринке по поводу дня рождения. Нарядное платье с длинным рукавом из красивых синтетических тканей и корсетом летом надеть сложно. Поэтому при подборе нарядной одежды учтите нюансы.<br>Я не моделирую одежду. Я создаю мечты. Ральф Лорен – модельер и дизайнер<br>
+						Красивая одежда дарит радость и маленькой девочке и взрослой женщине. Лучшим подарком для нас остается красивое платье.  Купить в подарок стильный костюм или нарядный комплект можно, ориентируясь на возраст или рост ребенка. Если Вы хотите сделать сюрприз и купить одежду для девочки, воспользуйтесь, пожалуйста, таблицей приведенной ниже. 
+					</p>
+					<h3>Таблица соответствия размера детской одежды росту возрасту для среднестатистических девочек от 1 года  до 14 лет.</h3>
+					<div class="s-catalog-info__table table-responsive">
+						<table>
+							<thead>
+								<tr>
+									<th>Наименование, возраст</th>
+									<th>Рост, см</th>
+									<th>Размер</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Детская одежда для девочек 1 год</td>
+									<td>75-80</td>
+									<td>80</td>
+								</tr>
+								<tr>
+									<td>Детская одежда для девочек 1 год</td>
+									<td>75-80</td>
+									<td>80</td>
+								</tr>
+								<tr>
+									<td>Детская одежда для девочек 1 год</td>
+									<td>75-80</td>
+									<td>80</td>
+								</tr>
+								<tr>
+									<td>Детская одежда для девочек 1 год</td>
+									<td>75-80</td>
+									<td>80</td>
+								</tr>
+								<tr>
+									<td>Детская одежда для девочек 1 год</td>
+									<td>75-80</td>
+									<td>80</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</section>
+			<!-- end s-catalog-info-->
 			<footer class="footer block-with-lazy">
 				<div class="container">
 					<div class="footer__row row">
@@ -2252,7 +2400,7 @@
 		<!-- for svg libs-->
 		<script src="libs/svg4everybody/svg4everybody.min.js"></script>
 		<!-- /for svg libs-->
-		<script src="libs/inputmask/jquery.inputmask.bundle.js"></script>
+		<script src="libs/inputmask/jquery.inputmask.bundle.js"></script><script src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
 		<script src="js/common.js"></script>
 	</body>
 </html>

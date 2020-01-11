@@ -11,6 +11,7 @@ include ../blocks/s-advantages/_s-advantages.pug
 include ../blocks/s-main-about/_s-main-about.pug
 include ../blocks/s-catalog-side/_s-catalog-side.pug
 include ../blocks/s-catalog-list/_s-catalog-list.pug
+include ../blocks/s-catalog-info/_s-catalog-info.pug
 
 block variables
 	- let  mainPage= ''
@@ -27,11 +28,12 @@ block pagecontent
 		+breadcrumb('Главная' ,'Каталог' ,`${title}`)
 		.catalog-page__main-section
 			.row
-				.col-3
+				.col-lg-3
 					+s-catalog-side()
-				.col-9
+				.col-lg-9
 					+s-catalog-list()
 	+s-catalog-slider('Слайдер')
 	+s-catalog-slider('Слайдер')
 	+s-catalog-slider('Слайдер')
+	+s-catalog-info()
 	+footer()
