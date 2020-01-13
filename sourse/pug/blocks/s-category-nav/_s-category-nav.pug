@@ -1,0 +1,29 @@
+mixin s-category-nav()
+	// start s-category-nav
+	+b.SECTION.s-category-nav.section#s-category-nav&attributes(attributes)
+		.container
+			+e.row.row
+				mixin col-i()
+					+e.col.col-lg-4.col-sm-6
+						+e.item
+							+e.img-wrap
+								img.res-i(src='img/@2x/category-i1.jpg' alt='')
+							h3
+								a(href='#') Школьная форма для девочек
+							+e.UL.list
+								li
+									a(href='#') Школьные блузки, гольфы, кофты, вышиванки
+								li
+									a(href='#') Жакеты, жилеты для школы
+								li
+									a(href='#') Школьные сарафаны, платья, костюмы
+								li
+									a(href='#') Спортивная форма для девочек
+								li
+									a(href='#') Школьные брюки
+								li
+									a(href='#') Школьные юбки
+				- for (var x = 0; x < 6; x++)
+					+col-i()
+					
+	// end s-category-nav

@@ -237,6 +237,10 @@ function eventHandler() {
 		slidesToScroll: 1
 	};
 	$('.s-main-slider__slider--js').slick(_objectSpread({}, defaultSlide));
+	$('.s-category-slider__slider--js').slick(_objectSpread({}, defaultSlide, {
+		dots: false,
+		fade: true
+	}));
 	$('.s-product__big-slider--js').slick(_objectSpread({}, defaultSlide, {
 		dots: false,
 		arrows: false,

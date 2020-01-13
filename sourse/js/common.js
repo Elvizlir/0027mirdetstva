@@ -271,6 +271,12 @@ function eventHandler() {
 		...defaultSlide,
 	});
 	
+	$('.s-category-slider__slider--js').slick({
+		...defaultSlide,
+		dots: false,
+		fade: true,
+	});
+	
 	$('.s-product__big-slider--js').slick({
 		...defaultSlide,
 		dots: false,

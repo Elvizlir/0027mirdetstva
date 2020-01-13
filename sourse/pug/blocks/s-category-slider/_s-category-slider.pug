@@ -1,0 +1,19 @@
+mixin s-category-slider()
+	// start s-category-slider
+	+b.s-category-slider.section#s-category-slider&attributes(attributes)
+		.container
+			+e.row.row
+				mixin slider()
+					+e.col.col-md-6
+						+e.slider--js
+							mixin slide()
+								.slick-slide
+									a(href='#')
+										+e.img-wrap
+											img.abs(src='img/@2x/catalog-i.jpg' alt='')
+							+slide()
+							+slide()
+							+slide()
+				+slider()
+				+slider()
+	// end s-category-slider
