@@ -4,7 +4,7 @@ mixin s-category-nav()
 		.container
 			+e.row.row
 				mixin col-i()
-					+e.col.col-lg-4.col-sm-6
+					+e.col.col-lg-3.col-md-4.col-sm-6
 						+e.item
 							+e.img-wrap
 								img.res-i(src='img/@2x/category-i1.jpg' alt='')
@@ -23,7 +23,7 @@ mixin s-category-nav()
 									a(href='#') Школьные брюки
 								li
 									a(href='#') Школьные юбки
-				- for (var x = 0; x < 6; x++)
+				- for (var x = 0; x < 8; x++)
 					+col-i()
 					
 	// end s-category-nav

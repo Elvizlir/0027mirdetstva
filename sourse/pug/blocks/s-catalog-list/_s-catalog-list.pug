@@ -36,17 +36,14 @@ mixin s-catalog-list()
 								+e.item-price 1 200 грн.
 								if p == 'price'
 									+e.item-price--light 800 грн.
-							if s == 'order'
-								+e.status--light Можно заказать
-							else
-								+e.status в наличии
+							+e.status в наличии
 							+e.item-btn.btn.btn-primary(type="button") подробнее
 				- for (var x = 0; x < 5; x++)
 					+catalog-i('price')
-					+catalog-i('','order')
+					+catalog-i('')
 					+catalog-i()
 					+catalog-i('')
-					+catalog-i('','order')
+					+catalog-i('')
 					+catalog-i()
 		+cat-nav-line()
 	// end s-catalog-list
