@@ -1,14 +1,18 @@
 $output-bourbon-deprecation-warnings: false;
 // @import "mq";
+@import "bootstrap.min";
+
 @import "bourbon/app/assets/stylesheets/bourbon";
 // @import "../../node_modules/rfs/scss";
- 
+
 @import "mixin";
 @import "fonts";
 @import "./public/img/svg/_sprite";
 // @import "bootstrap-theme/bootstrap";
 
 // Option B: Include parts of Bootstrap
+
+
 
 
 @import "vars";
@@ -97,3 +101,5 @@ $output-bourbon-deprecation-warnings: false;
 @import "base"; 
 @import '../pug/blocks/**/*.scss';
 @import "media";// Всегда в конце
+
+

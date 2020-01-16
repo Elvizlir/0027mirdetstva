@@ -1,0 +1,148 @@
+mixin s-basket()
+	// start s-basket
+	+b.SECTION.s-basket.section#s-basket&attributes(attributes)
+		<div class="container">
+				<div class="row">
+						<div id="content" class="col-sm-12">
+								<h1>Корзина покупок </h1>
+								<form >
+										<div class="table-responsive">
+												<table class="table table-bordered">
+														<thead>
+																<tr>
+																		<td class="text-center">Изображение</td>
+																		<td class="text-left">Наименование товара</td>
+																		<td class="text-left">Модель</td>
+																		<td class="text-left">Кол-во</td>
+																		<td class="text-right">Цена за шт.</td>
+																		<td class="text-right">Всего</td>
+																</tr>
+														</thead>
+														<tbody>
+																<tr>
+																		<td class="text-center">
+																				<a href=""><img src="https://fashionfur.com.ua/image/cache/no_image-47x47.png" alt="" class="img-thumbnail" /></a>
+																		</td>
+																		<td class="text-left"><a href="">Платье</a>
+																		</td>
+																		<td class="text-left">0000000-2162</td>
+																		<td class="text-left">
+																				<div class="input-group btn-block" style="max-width: 200px;">
+																					<input type="text" name="quantity[292]" value="1" size="1" class="form-control quantity-quantity" />
+																					<span class="input-group-btn">
+																						<button type="submit" class="btn btn-primary"><i class="fa fa-refresh"></i></button>
+																						<button type="button" class="btn btn-danger"><i class="fa fa-times-circle"></i></button>
+																					</span>
+																				</div>
+																		</td>
+																		<td class="text-right">49.80 грн.</td>
+																		<td class="text-right">49.80 грн.</td>
+																</tr>
+														</tbody>
+												</table>
+										</div>
+								</form>
+								<h3>Воспользуйтесь дополнительными возможностями</h3>
+								<p>Если у вас есть код купона на скидку или бонусные баллы, которые вы хотите использовать, выберите соответствующий пункт.
+										<br>Также, можно (приблизительно) узнать стоимость доставки в ваш регион.</p>
+								<div class="panel-group" id="accordion">
+										<div class="panel panel-default">
+												<div class="panel-heading">
+														<h4 class="panel-title"><a href="#collapse-coupon" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">Использовать купон на скидку <i class="fa fa-caret-down"></i></a></h4>
+												</div>
+												<div id="collapse-coupon" class="panel-collapse collapse">
+														<div class="panel-body">
+															.row
+																<label class="col-lg-2 control-label" for="input-coupon">Введите код купона</label>
+																<div class="col-lg-10">
+																	.input-group
+																		<input type="text" name="coupon" value="" placeholder="Введите код купона" id="input-coupon" class="form-control" />
+																		<span class="input-group-btn">
+																			<input type="button" value="Применить купон" id="button-coupon" data-loading-text="Загрузка..." class="btn btn-primary" />
+																		</span>
+																</div>
+														</div>
+												</div>
+										</div>
+										<div class="panel panel-default">
+												<div class="panel-heading">
+														<h4 class="panel-title"><a href="#collapse-shipping" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">Узнать стоимость доставки <i class="fa fa-caret-down"></i></a></h4>
+												</div>
+												<div id="collapse-shipping" class="panel-collapse collapse">
+														<div class="panel-body">
+																<p>Что бы узнать (приблизительную) стоимость доставки, укажите Ваш регион</p>
+																<div class="form-horizontal">
+																		<div class="form-group required">
+																			.row
+																				<label class="col-lg-2 control-label" for="input-country">Страна</label>
+																				<div class="col-lg-10">
+																						<select name="country_id" id="input-country" class="form-control">
+																								<option value="" selected="selected"> --- Выберите --- </option>
+																								<option value="300001"> 1</option>
+																						</select>
+																				</div>
+																		</div>
+																		<div class="form-group required">
+																			.row
+																				<label class="col-lg-2 control-label" for="input-zone">Регион / область</label>
+																				<div class="col-lg-10">
+																						<select name="zone_id" id="input-zone" class="form-control">
+																								<option value="" selected="selected"> --- Выберите --- </option>
+																								<option value="300001"> 1</option>
+																						</select>
+																				</div>
+																		</div>
+																		<div class="form-group required">
+																			.row
+																				<label class="col-lg-2 control-label" for="input-postcode">Индекс</label>
+																				<div class="col-lg-10">
+																						<input type="text" name="postcode" value="" placeholder="Индекс" id="input-postcode" class="form-control" />
+																				</div>
+																		</div>
+																		<button type="button" id="button-quote" data-loading-text="Загрузка..." class="btn btn-primary">Рассчитать стоимость</button>
+																</div>
+														</div>
+												</div>
+										</div>
+										<div class="panel panel-default">
+												<div class="panel-heading">
+														<h4 class="panel-title"><a href="#collapse-voucher" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Использовать подарочный сертификат <i class="fa fa-caret-down"></i></a></h4>
+												</div>
+												<div id="collapse-voucher" class="panel-collapse collapse">
+														<div class="panel-body">
+															.row
+																<label class="col-lg-2 control-label" for="input-voucher">Введите код сертификата</label>
+																<div class="col-lg-10">
+																	.input-group
+																		<input type="text" name="voucher" value="" placeholder="Введите код сертификата" id="input-voucher" class="form-control" />
+																		<span class="input-group-btn">
+																			<input type="submit" value="Применить сертификат" id="button-voucher" data-loading-text="Загрузка..." class="btn btn-primary" />
+																		</span>
+																</div>
+														</div>
+												</div>
+										</div>
+								</div>
+								<br />
+								<div class="row">
+										<div class="col-md-5 col-sm-offset-7">
+												<table class="table table-bordered">
+														<tr>
+																<td class="text-right"><strong>Предварительная стоимость:</strong></td>
+																<td class="text-right">49.80 грн.</td>
+														</tr>
+														<tr>
+																<td class="text-right"><strong>Итого:</strong></td>
+																<td class="text-right">49.80 грн.</td>
+														</tr>
+												</table>
+										</div>
+								</div>
+								<div class="buttons clearfix">
+									<a href="#" class="btn order-sm-last btn-primary">Оформление заказа</a>
+									<a href="#" class="btn btn-default">Продолжить покупки</a>
+								</div>
+						</div>
+				</div>
+		</div>
+	// end s-basket
