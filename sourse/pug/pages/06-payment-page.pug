@@ -1,0 +1,32 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-main-slider/_s-main-slider.pug
+include ../blocks/s-categories/_s-categories.pug
+include ../blocks/s-catalog-slider/_s-catalog-slider.pug
+include ../blocks/s-recomend/_s-recomend.pug
+include ../blocks/s-advantages/_s-advantages.pug
+include ../blocks/s-main-about/_s-main-about.pug
+include ../blocks/s-category-slider/_s-category-slider.pug
+include ../blocks/s-payment/_s-payment.pug
+include ../blocks/s-catalog-list/_s-catalog-list.pug
+include ../blocks/s-catalog-info/_s-catalog-info.pug
+include ../blocks/s-catalog-info/_s-catalog-info.pug
+
+block variables
+	- let  mainPage= ''
+block title
+	- let  title= 'Корзина'
+	title= title
+block pagecontent 
+	+mob-mnu()
+	+header()
+		+top-line()
+		+top-nav()
+	//- +header-block()
+	.container.top-section
+		+breadcrumb('Главная' ,`${title}`)
+	+s-payment()
+	+footer()

@@ -1,0 +1,114 @@
+mixin s-payment()
+	// start s-payment
+	+b.SECTION.s-payment.section#s-payment&attributes(attributes)
+		.container
+			+e.main-block
+				h1 Оформление заказа
+				+e.table.table-responsive
+					table
+						thead
+							tr
+								+e.TH.table-photo Фото
+								th.text-center Наименование товара
+								+e.TH.table-model.text-center Модель
+								th.text-center Кол-во
+								th.text-right Цена
+								th.text-right Итого
+						tbody
+							tr
+								+e.TD.table-photo
+									a(href='#')
+										+e.IMG.table-photo-img.res-i(src='https://fashionfur.com.ua/image/cache/no_image-47x47.png' alt='')
+								+e.TD.table-name.text-center
+									+e.A.table-photo-link(href='#')
+										+e.IMG.table-photo-img.res-i(src='https://fashionfur.com.ua/image/cache/no_image-47x47.png' alt='')
+									+e.A.product-link(href='#') Платье
+								+e.TD.table-model.text-center 0000000-2162
+								td.text-center
+									.input-group.btn-block
+										span.input-group-btn
+											+e.BUTTON.table-count-btn.btn.btn-primary(type="submit")
+												i.fa.fa-minus
+										input.form-control(value="1")
+										span.input-group-btn
+											+e.BUTTON.table-count-btn.btn.btn-primary(type="submit")
+												i.fa.fa-plus
+											button.btn.btn-danger(type="submit")
+												i.fa.fa-times-circle
+								td.text-right.text-danger 49.80 грн.
+								td.text-right
+									strong 49.80 грн.
+				+e.order-line
+					strong Предварительная стоимость:
+					span 99.60 грн.
+				+e.order-line
+					strong Отправка службой "Новая почта":
+					span 0.00 грн.
+				+e.order-line
+					strong Итого:
+					span 99.60 грн.
+				+e.order-line
+					+e.SPAN.table-input Купон:&nbsp;
+						input.form-control(type="text")
+				+e.order-line
+					+e.SPAN.table-input Подарочный сертификат:&nbsp;
+						input.form-control(type="text")
+				+e.order-line
+					+e.btn-reload.btn.btn-primary Обновить
+			
+			form
+
+				+e.form-block
+					+e.form-block-head
+						span Покупатель
+					+e.form-block-body
+						+e.form-row.row
+							+e.form-col.col-sm-4
+								+e.LABEL.form-label(for='order-name') Имя
+							+e.form-col.col-sm-8
+								input.form-control#order-name(type="text" name='order-name')
+							+e.form-col.col-sm-4
+								+e.LABEL.form-label(for='order-surname') Фамилия
+							+e.form-col.col-sm-8
+								input.form-control#order-surname(type="text" name='order-surname')
+							+e.form-col.col-sm-4
+								+e.LABEL.form-label(for='order-email') Email
+							+e.form-col.col-sm-8
+								input.form-control#order-email(type="text" name='order-email')
+							+e.form-col.col-sm-4
+								+e.LABEL.form-label(for='order-phone') Телефон
+							+e.form-col.col-sm-8
+								input.form-control#order-phone(type="tel" name='order-phone')
+
+				
+				+e.form-block
+					+e.form-block-head
+						span Адрес доставки
+					+e.form-block-body
+						+e.form-row.row
+							+e.form-col.col-sm-4
+								+e.LABEL.form-label(for='order-region') Область
+							+e.form-col.col-sm-8
+								select.form-control#order-region(name='order-region')
+									option(value='0' selected) --- Выберите ---
+									option(value='1') 1
+									option(value='2') 2
+							+e.form-col.col-sm-4
+								+e.LABEL.form-label(for='order-city') Город
+							+e.form-col.col-sm-8
+								select.form-control#order-city(name='order-city')
+									option(value='0' selected) --- Выберите ---
+									option(value='1') 1
+									option(value='2') 2
+							+e.form-col.col-sm-4
+								+e.LABEL.form-label(for='order-post') Отделение почты
+							+e.form-col.col-sm-8
+								select.form-control#order-post(name='order-post')
+									option(value='0' selected) --- Выберите ---
+									option(value='1') 1
+									option(value='2') 2
+				
+				+e.main-btn-wrap
+					+e.main-btn.btn.btn-primary(type="submit") Оформить заказ
+			
+	// end s-payment

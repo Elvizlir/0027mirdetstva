@@ -1,0 +1,175 @@
+
+// start .s-payment
+.s-payment {
+	padding-top: 0;
+
+	&__main-block{
+		margin-bottom: rem(20);
+	}
+
+	.table-responsive{
+		margin-bottom: 0;
+		border: none;
+	}
+
+	&__product-link{
+		display: block;
+	}
+	
+	&__table-photo{
+		@include media-breakpoint-down(md){
+			display: none;
+		}
+
+		&-link{
+			display: inline-block;
+			margin-bottom: rem(5);
+			@include media-breakpoint-up(lg){
+				display: none;
+			}
+		}
+
+		&-img{
+			max-width: rem(50);
+			height: auto;
+		}
+	}
+
+	&__table-model{
+		@include media-breakpoint-down(sm){
+			display: none;
+		}
+	}
+	&__table-count-btn{
+		@include media-breakpoint-down(xs){
+			display: none;
+		}
+	}
+
+	&__table{
+		background-color: #fff;
+
+		table{
+			min-width: rem(400);
+			width: 100%;
+			border: 1px solid #DDDDDD;
+			
+			thead{
+				border-bottom: 1px solid #DDDDDD;
+				background-color: #F8F8F8;
+			}
+
+			th,
+			td{
+				padding: rem(8);
+
+				&:nth-child(4){
+					@include media-breakpoint-up(sm){
+						width: rem(170);
+					}
+				}
+			}
+
+			tbody{
+				tr{
+					border-bottom: 1px solid #DDD;
+				}
+			}
+		}
+	}
+
+	&__order-line{
+		background-color: #fff;
+		border: 1px solid #DDD;
+		margin-top: rem(-1);
+		padding: rem(8);
+		text-align: right;
+		strong{
+			// display: inline-block;
+			margin-right: rem(5);
+		}
+
+		span{
+			display: inline-block;
+		}
+	}
+
+	&__table-input{
+		display: inline-block;
+		input{
+			display: inline-block;
+			width: rem(100);
+		}
+	}
+
+	&__form-block{
+		background-color: #fff;
+		margin-bottom: rem(20);
+		border-radius: rem(5) rem(5) 0 0;
+		overflow: hidden;
+
+		&-head{
+			padding: rem(10) rem(20);
+			background-color: #f5f5f5;
+			border-bottom: 1px solid #ddd;
+		}
+
+		&-body{
+			padding: rem(10) rem(10) 0;
+		}
+	}
+
+	&__form-row{
+		align-items: center;
+		@include roww(10);
+	}
+
+	&__form-label{
+		@include media-breakpoint-up(sm){
+			float: right;
+		}
+		margin-bottom: 0;
+	}
+
+	&__form-col{
+		margin-bottom: rem(10);
+		@include media-breakpoint-up(sm){
+			margin-bottom: rem(15);
+		}
+	}
+
+	&__main-btn-wrap{
+		text-align: right;
+	}
+
+	&__main-btn{
+		@include media-breakpoint-down(xs){
+			width: 100%;
+		}
+	}
+
+@include media-breakpoint-up(xl) {}
+@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(xs) {}
+
+//
+@include media-breakpoint-between(md, xl) { }
+
+
+//
+@include media-breakpoint-only(xs) {}
+@include media-breakpoint-only(sm) {}
+@include media-breakpoint-only(md) {}
+@include media-breakpoint-only(lg) {}
+@include media-breakpoint-only(xl) {}
+
+//
+@include media-breakpoint-down(xl) {}
+@include media-breakpoint-down(lg) {}
+@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(sm) {}
+@include media-breakpoint-down(xs) {} 
+
+} // end.s-payment
