@@ -6,3 +6,4 @@
 <a href='https://elvizlir.github.io/0027mirdetstva/public/03-product-page.html'>Карточка товара</a><br>
 <a href='https://elvizlir.github.io/0027mirdetstva/public/05-basket-page.html'>Корзина</a><br>
 <a href='https://elvizlir.github.io/0027mirdetstva/public/06-payment-page.html'>Оформление заказа</a><br>
+<a href='https://elvizlir.github.io/0027mirdetstva/public/07-content-page.html'>Контентная страница</a><br>
