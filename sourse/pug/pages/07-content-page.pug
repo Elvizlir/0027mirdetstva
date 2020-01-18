@@ -10,7 +10,7 @@ include ../blocks/s-recomend/_s-recomend.pug
 include ../blocks/s-advantages/_s-advantages.pug
 include ../blocks/s-main-about/_s-main-about.pug
 include ../blocks/s-category-slider/_s-category-slider.pug
-include ../blocks/s-payment/_s-payment.pug
+include ../blocks/s-content-block/_s-content-block.pug
 include ../blocks/s-catalog-list/_s-catalog-list.pug
 include ../blocks/s-catalog-info/_s-catalog-info.pug
 include ../blocks/s-catalog-info/_s-catalog-info.pug
@@ -18,7 +18,7 @@ include ../blocks/s-catalog-info/_s-catalog-info.pug
 block variables
 	- let  mainPage= ''
 block title
-	- let  title= 'Оформление заказа'
+	- let  title= 'Страница с контентом'
 	title= title
 block pagecontent 
 	+mob-mnu()
@@ -27,6 +27,6 @@ block pagecontent
 		+top-nav()
 	//- +header-block()
 	.container.top-section
-		+breadcrumb('Главная', 'Корзина', `${title}`)
-	+s-payment()
+		+breadcrumb('Главная' ,`${title}`)
+	+s-content-block()
 	+footer()

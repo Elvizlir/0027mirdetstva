@@ -15372,6 +15372,77 @@ a {
   fill: #fff;
 }
 
+.s-content-block {
+  padding-top: 0;
+  color: #6d6d6d;
+}
+
+.s-content-block h1 {
+  color: #3632ec;
+  font-size: 2rem;
+  margin-bottom: 1.0625rem;
+}
+
+.s-content-block h4 {
+  color: #3632ec;
+}
+
+.s-content-block p {
+  margin-bottom: 1.375rem;
+  line-height: 1.5;
+}
+
+.s-content-block p span {
+  color: #3632ec;
+}
+
+.s-content-block ul {
+  padding-left: 1.25rem;
+}
+
+.vacancies-content a {
+  color: #3632ec;
+}
+
+.vacancies-content__link {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  margin-bottom: 0.625rem;
+  text-decoration: underline;
+}
+
+.vacancies-content__link .fa {
+  margin-right: 0.3125rem;
+}
+
+.vacancies-content h4,
+.vacancies-content h5 {
+  color: #7C24EB;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.vacancies-content ul {
+  margin-bottom: 1.875rem;
+  list-style: none;
+}
+
+.vacancies-content ul li i {
+  color: #7C24EB;
+  margin-right: 0.3125rem;
+}
+
+.vacancies-content__block {
+  border-top: 0.3125rem double #ededed;
+  margin-top: 0.625rem;
+  padding-top: 1.25rem;
+}
+
+.vacancies-content__block p {
+  margin-bottom: 0.625rem;
+}
+
 .s-main-about {
   padding: 0.625rem 0 1.875rem;
 }
@@ -20087,6 +20158,14 @@ a {
             justify-content: space-between;
   }
 
+  .s-content-block h4 {
+    margin-bottom: 0.1875rem;
+  }
+
+  .s-content-block ul {
+    padding-left: 2.5rem;
+  }
+
   .s-product__btn {
     margin: 0 0.3125rem;
   }
@@ -22987,6 +23066,10 @@ a {
 
   .s-category-nav h3 {
     font-size: calc(1.275rem + 0.3vw);
+  }
+
+  .s-content-block h1 {
+    font-size: calc(1.325rem + 0.9vw);
   }
 }
 

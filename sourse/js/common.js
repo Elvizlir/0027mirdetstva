@@ -153,12 +153,12 @@ function eventHandler() {
 	heightses();
 
 	// листалка по стр
-	$(" .top-nav li a, .scroll-link").click(function () {
+	$(".scroll-link").click(function () {
 		const elementClick = $(this).attr("href");
 		const destination = $(elementClick).offset().top;
 
 		$('html, body').animate({
-			scrollTop: destination
+			scrollTop: destination - 50
 		}, 1100);
 
 		return false;
